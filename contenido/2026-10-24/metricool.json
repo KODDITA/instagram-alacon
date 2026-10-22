@@ -1,14 +1,26 @@
 {
   "nota": "Cambio de hora esta madrugada",
-  "metricool": {
-    "marca": "alaconformacion",
-    "brandId": 5914974,
-    "red": "instagram",
-    "tipo": "STORY",
-    "hora": "2026-10-24T09:00:00 Europe/Madrid",
-    "id": "403001784",
-    "uuid": "-7996317097234904133",
-    "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-7996317097234904133"
-  },
-  "archivo": "historia-alacon.jpg"
+  "archivo": "historia-alacon.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-24T09:00:00 Europe/Madrid",
+      "id": "403001784",
+      "uuid": "-7996317097234904133",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-7996317097234904133"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-24T09:00:00 Europe/Madrid",
+      "id": "403003413",
+      "uuid": "2513260330824256553",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=2513260330824256553"
+    }
+  ]
 }

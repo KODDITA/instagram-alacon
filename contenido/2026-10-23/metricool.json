@@ -1,14 +1,26 @@
 {
   "nota": "Oferta de Halloween (50 % en todas las formaciones)",
-  "metricool": {
-    "marca": "alaconformacion",
-    "brandId": 5914974,
-    "red": "instagram",
-    "tipo": "STORY",
-    "hora": "2026-10-23T09:00:00 Europe/Madrid",
-    "id": "403001764",
-    "uuid": "-490529791275350259",
-    "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-490529791275350259"
-  },
-  "archivo": "historia-alacon.jpg"
+  "archivo": "historia-alacon.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-23T09:00:00 Europe/Madrid",
+      "id": "403001764",
+      "uuid": "-490529791275350259",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-490529791275350259"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-23T09:00:00 Europe/Madrid",
+      "id": "403003392",
+      "uuid": "8698951149053758047",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=8698951149053758047"
+    }
+  ]
 }

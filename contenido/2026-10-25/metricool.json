@@ -1,14 +1,26 @@
 {
   "nota": "Halloween: el chocolate es tóxico para los perros (veterinaria)",
-  "metricool": {
-    "marca": "alaconformacion",
-    "brandId": 5914974,
-    "red": "instagram",
-    "tipo": "STORY",
-    "hora": "2026-10-25T09:00:00 Europe/Madrid",
-    "id": "403001817",
-    "uuid": "-8382813321048143496",
-    "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-8382813321048143496"
-  },
-  "archivo": "historia-alacon.jpg"
+  "archivo": "historia-alacon.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-25T09:00:00 Europe/Madrid",
+      "id": "403001817",
+      "uuid": "-8382813321048143496",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-8382813321048143496"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-25T09:00:00 Europe/Madrid",
+      "id": "403003425",
+      "uuid": "1278294230255880953",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=1278294230255880953"
+    }
+  ]
 }
