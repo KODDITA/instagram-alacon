@@ -1,0 +1,26 @@
+{
+  "nota": "Prácticas en empresas líderes",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-30T09:00:00 Europe/Madrid",
+      "id": "403169293",
+      "uuid": "-9016437055758120335",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-9016437055758120335"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-30T09:00:00 Europe/Madrid",
+      "id": "403169912",
+      "uuid": "835689650137877723",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=835689650137877723"
+    }
+  ]
+}

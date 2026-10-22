@@ -1,0 +1,26 @@
+{
+  "nota": "Botón de prueba del diferencial",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-28T09:00:00 Europe/Madrid",
+      "id": "403169197",
+      "uuid": "-8073106520190005268",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-8073106520190005268"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-10-28T09:00:00 Europe/Madrid",
+      "id": "403169840",
+      "uuid": "3469160769714865679",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=3469160769714865679"
+    }
+  ]
+}
