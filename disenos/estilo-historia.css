@@ -1,0 +1,42 @@
+/* Estilo común de las historias de Alacon × Novantis (1080×1920).
+   Zonas seguras: 250 px arriba y 340 px abajo quedan libres para la interfaz de Instagram.
+   El fondo es una imagen (Higgsfield) a pantalla completa; textos, logo y teléfono van encima en HTML. */
+:root {
+  --brand: #006DA6; --brand-deep: #00527E; --brand-light: #BFDCF0;
+  --marcador: #94C6E8; --grey: #4C4C4C;
+  --peligro: #D7362B; --peligro-texto: #B02A21; --wa: #25D366;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body { font-family: "Montserrat", sans-serif; color: var(--grey); position: relative; background: #E1EEF7; }
+.fondo { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+/* Velo claro en la parte de abajo para que el texto se lea sobre cualquier imagen */
+.velo { position: absolute; left: 0; right: 0; bottom: 0; height: 1000px;
+  background: linear-gradient(180deg, rgba(225,238,247,0) 0%, rgba(225,238,247,.85) 30%, rgba(225,238,247,.96) 100%); }
+.logo { position: absolute; top: 190px; left: 50%; transform: translateX(-50%);
+  width: 400px; padding: 20px 28px; background: #fff; border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(0,82,126,.16); }
+.logo img { width: 100%; display: block; }
+.etiqueta { font-family: "Space Mono", monospace; font-weight: 700; font-size: 30px;
+  letter-spacing: 4px; text-transform: uppercase; color: var(--grey); }
+.chip { display: inline-flex; align-items: center; gap: 14px; background: #fff;
+  border-radius: 999px; padding: 14px 30px; box-shadow: 0 10px 30px rgba(0,82,126,.14); }
+.kicker { position: absolute; left: 0; right: 0; text-align: center; }
+.titular { position: absolute; left: 70px; right: 70px; font-weight: 900; color: var(--brand);
+  text-align: center; letter-spacing: -1px; line-height: 1.06; }
+.marca { background: linear-gradient(transparent 62%, var(--marcador) 62%, var(--marcador) 92%, transparent 92%); padding: 0 6px; }
+.nota { position: absolute; left: 110px; right: 110px; font-weight: 700; font-size: 36px;
+  text-align: center; color: var(--grey); line-height: 1.3; }
+.cta { position: absolute; top: 1400px; left: 130px; right: 130px; background: #fff;
+  border-radius: 36px; padding: 24px 34px 28px; text-align: center;
+  box-shadow: 0 16px 44px rgba(0,82,126,.18); border: 4px solid var(--brand); }
+.cta .etiqueta { font-size: 28px; letter-spacing: 3px; display: flex; align-items: center; justify-content: center; gap: 14px; }
+.cta .numero { font-weight: 900; font-size: 92px; color: var(--brand); margin-top: 4px; letter-spacing: 1px; }
+.cta .curso { font-weight: 700; font-size: 30px; color: var(--brand-deep); margin-bottom: 6px; }
+/* Ajuste por historia: --subir desplaza la imagen hacia arriba para dejar más sitio al texto */
+.fondo { top: calc(-1 * var(--subir, 0px)); }
+.wa-chip { position: absolute; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center;
+  gap: 16px; background: #fff; border-radius: 999px; padding: 16px 36px; border: 4px solid var(--brand);
+  box-shadow: 0 12px 34px rgba(0,82,126,.16); white-space: nowrap; }
+.wa-chip b { font-weight: 900; font-size: 52px; color: var(--brand); letter-spacing: 1px; }
+.wa-chip span { font-family: "Space Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 2px; color: var(--grey); text-transform: uppercase; }

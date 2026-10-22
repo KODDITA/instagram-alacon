@@ -8,3 +8,8 @@ Publica cada día la historia programada y, los lunes, el post de la semana.
 - `.github/workflows/publicar.yml`: lo lanza cada mañana (9:00, hora de Madrid).
 
 Solo se sube aquí el contenido ya aprobado. Las claves viven en los Secrets de GitHub y en `.env` (que nunca se sube).
+
+## Desde el 22-10-2026: Metricool
+Las historias aprobadas se programan en Metricool (el equipo las ve en su calendario). GitHub solo aloja las imágenes en
+`https://koddita.github.io/instagram-alacon/contenido/AAAA-MM-DD/…`. Cada día guarda `metricool.json` con lo programado.
+La publicación diaria desde GitHub está apagada para que nada salga dos veces.

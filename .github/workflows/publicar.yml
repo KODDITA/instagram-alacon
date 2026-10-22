@@ -1,11 +1,11 @@
 name: Publicar en Instagram
 
 on:
-  # Dos avisos al día para cubrir el horario de verano y de invierno.
-  # El script solo publica a partir de las 9:00 de Madrid y nunca dos veces lo mismo.
-  schedule:
-    - cron: "0 7 * * *"
-    - cron: "0 8 * * *"
+  # La programación diaria la lleva Metricool. Este flujo queda solo para lanzarlo a mano.
+  # Para volver a publicar desde GitHub cada día, añade de nuevo:
+  # schedule:
+  #   - cron: "0 7 * * *"
+  #   - cron: "0 8 * * *"
   workflow_dispatch:
     inputs:
       fecha:
