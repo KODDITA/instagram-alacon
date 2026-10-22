@@ -1,7 +1,14 @@
 {
   "nota": "Halloween: el chocolate es tóxico para los perros (veterinaria)",
-  "historias": [
-    {"cuenta": "alacon", "archivo": "historia-alacon.jpg"}
-  ],
-  "posts": []
+  "metricool": {
+    "marca": "alaconformacion",
+    "brandId": 5914974,
+    "red": "instagram",
+    "tipo": "STORY",
+    "hora": "2026-10-25T09:00:00 Europe/Madrid",
+    "id": "403001817",
+    "uuid": "-8382813321048143496",
+    "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-8382813321048143496"
+  },
+  "archivo": "historia-alacon.jpg"
 }

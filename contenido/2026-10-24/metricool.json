@@ -1,7 +1,14 @@
 {
   "nota": "Cambio de hora esta madrugada",
-  "historias": [
-    {"cuenta": "alacon", "archivo": "historia-alacon.jpg"}
-  ],
-  "posts": []
+  "metricool": {
+    "marca": "alaconformacion",
+    "brandId": 5914974,
+    "red": "instagram",
+    "tipo": "STORY",
+    "hora": "2026-10-24T09:00:00 Europe/Madrid",
+    "id": "403001784",
+    "uuid": "-7996317097234904133",
+    "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-7996317097234904133"
+  },
+  "archivo": "historia-alacon.jpg"
 }
