@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --brand: #006DA6; --brand-deep: #00527E; --brand-light: #BFDCF0;
+    --marcador: #94C6E8; --grey: #4C4C4C; --wa: #25D366; --wa-texto: #0F7A3F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; }
+  body {
+    font-family: "Montserrat", sans-serif; color: var(--grey);
+    background:
+      radial-gradient(900px 700px at 85% 8%, rgba(0,109,166,.24), transparent 70%),
+      radial-gradient(800px 700px at 10% 92%, rgba(0,109,166,.26), transparent 70%),
+      linear-gradient(180deg, #EAF4FA 0%, #E1EEF7 50%, #D3E6F3 100%);
+    position: relative;
+  }
+  /* Zonas seguras de historias: arriba 250 px y abajo 340 px libres */
+  .logo { position: absolute; top: 270px; left: 50%; transform: translateX(-50%);
+    width: 620px; padding: 34px 44px; background: #fff; border-radius: 36px;
+    box-shadow: 0 18px 50px rgba(0,82,126,.14); }
+  .logo img { width: 100%; display: block; }
+  .ilustracion { position: absolute; top: 560px; left: 50%; transform: translateX(-50%); width: 640px; }
+  h1 { position: absolute; top: 1080px; left: 80px; right: 80px; text-align: center;
+    font-weight: 900; font-size: 92px; line-height: 1.08; color: var(--brand); letter-spacing: -1px; }
+  h1 .marca { background: linear-gradient(transparent 62%, var(--marcador) 62%, var(--marcador) 92%, transparent 92%); padding: 0 6px; }
+  .cta { position: absolute; top: 1370px; left: 120px; right: 120px; background: #fff;
+    border-radius: 40px; padding: 34px 40px 38px; text-align: center;
+    box-shadow: 0 18px 50px rgba(0,82,126,.16); border: 4px solid var(--brand); }
+  .cta .etiqueta { font-family: "Space Mono", monospace; font-weight: 700; font-size: 30px;
+    letter-spacing: 3px; color: var(--grey); text-transform: uppercase; display: flex;
+    align-items: center; justify-content: center; gap: 16px; }
+  .cta .numero { font-weight: 900; font-size: 104px; color: var(--brand); margin-top: 6px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="logo"><img src="assets/logo-alacon-novantis.png" alt="Alacon Formación × Novantis Formación"></div>
+
+  <!-- Portátil con birrete y check: estudiar online en un centro oficial -->
+  <svg class="ilustracion" viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <ellipse cx="320" cy="430" rx="270" ry="22" fill="#00527E" opacity=".12"/>
+    <rect x="110" y="90" width="420" height="270" rx="26" fill="#4C4C4C"/>
+    <rect x="132" y="112" width="376" height="226" rx="12" fill="#FFFFFF"/>
+    <rect x="160" y="140" width="150" height="18" rx="9" fill="#BFDCF0"/>
+    <rect x="160" y="172" width="230" height="14" rx="7" fill="#E1EEF7"/>
+    <rect x="160" y="198" width="200" height="14" rx="7" fill="#E1EEF7"/>
+    <rect x="160" y="236" width="120" height="70" rx="14" fill="#006DA6"/>
+    <path d="M205 256 l22 15 l-22 15 z" fill="#FFFFFF"/>
+    <rect x="300" y="236" width="180" height="14" rx="7" fill="#E1EEF7"/>
+    <rect x="300" y="262" width="150" height="14" rx="7" fill="#E1EEF7"/>
+    <rect x="300" y="288" width="120" height="14" rx="7" fill="#E1EEF7"/>
+    <path d="M60 372 h520 l-34 44 h-452 z" fill="#4C4C4C"/>
+    <rect x="270" y="372" width="100" height="12" rx="6" fill="#6A6A6A"/>
+    <!-- birrete -->
+    <g transform="translate(380 0)">
+      <path d="M110 40 L200 78 L110 116 L20 78 Z" fill="#006DA6"/>
+      <path d="M56 94 v40 c0 18 108 18 108 0 v-40 l-54 22 z" fill="#00527E"/>
+      <path d="M200 78 v52" stroke="#00527E" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="200" cy="138" r="10" fill="#94C6E8"/>
+    </g>
+    <!-- check -->
+    <g transform="translate(40 40)">
+      <circle cx="60" cy="60" r="58" fill="#FFFFFF" stroke="#006DA6" stroke-width="8"/>
+      <path d="M34 62 l18 18 l36 -38" fill="none" stroke="#006DA6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+
+  <h1>Fórmate online en un <span class="marca">centro oficial</span></h1>
+
+  <div class="cta">
+    <div class="etiqueta">
+      <svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true"><path fill="#25D366" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3z"/><path fill="#fff" d="M22.6 18.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      Pide información
+    </div>
+    <div class="numero">611 12 62 64</div>
+  </div>
+</body>
+</html>
