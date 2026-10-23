@@ -27,7 +27,28 @@ En todas las llamadas de abajo, `"${AUT[@]}"` va en lugar de la cabecera `Author
   verdaderos de Alacon y Novantis: úsalos como única fuente), `calendario` (contenido ya planificado) y
   `documentos` (la carpeta de documentos; el archivo se descarga con
   `GET $OFI/documentos/ID/archivo`).
+- Antes de mirar los encargos, haz el paso 0b (calendario de Metricool) si toca.
 - Si no hay encargos, termina diciendo «Nada que hacer».
+
+## 0b. Calendario de Metricool en la oficina (una vez al día)
+
+Solo si `metricool_ultima` de `trabajo.json` es `null` o su `cuando` no es de hoy (fecha de Madrid):
+
+1. Con el conector de Metricool, `getScheduledPosts` de las dos marcas (Alacon `5914974` y Novantis `7052187`),
+   `timezone` `Europe/Madrid`, desde hace 7 días hasta dentro de 35 días.
+2. Escribe `/tmp/metricool.json` con este formato (una entrada por publicación y marca, sin inventar nada):
+   ```json
+   {"desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD","publicaciones":[
+     {"marca":"Alacon","id":403001784,"fecha":"2026-10-24T09:00","tipo":"STORY","estado":"PENDING",
+      "redes":["instagram"],"media":"https://static.metricool.com/…jpeg","texto":"…","titulo":"…","url":"…"}]}
+   ```
+   - `tipo`: el `type` de `instagramData` (STORY, REEL, POST, CAROUSEL…); si no hay, el de otra red.
+   - `estado`: PUBLISHED si todas sus redes están publicadas; ERROR si alguna falló; si no, PENDING.
+   - `media`: la primera URL de `media`. `url`: el `publicUrl` de Instagram si existe.
+   - `texto`: el `text` completo (puede ir vacío). `titulo`: solo si hay `youtubeData.title`.
+3. `curl -sf -X POST "${AUT[@]}" -H 'Content-Type: application/json' -d @/tmp/metricool.json "$OFI/metricool"`.
+   La oficina junta Alacon y Novantis cuando son la misma pieza y la enlaza con lo que Alex ya tenía planificado.
+4. Si falla, sigue con los encargos y dilo en el resumen final.
 
 ## 1. Encargos en estado `Pendiente`: hacer el trabajo
 
