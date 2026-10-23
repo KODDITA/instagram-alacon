@@ -10,12 +10,18 @@ usuario: apunta los encargos y Claude los hace y se los devuelve para que el usu
 
 ```bash
 OFI=https://oficina-virtual.alexbarras.workers.dev/api/maquina
-curl -sf -H "Authorization: Bearer $OFICINA_CLAVE" "$OFI/trabajo" > /tmp/trabajo.json
+# La llave puede venir de dos sitios: como «secreto de red» del entorno (se añade sola a las peticiones a la
+# oficina y no se ve) o como variable OFICINA_CLAVE. Si existe la variable, se usa; si no, se confía en el secreto.
+AUT=(); [ -n "$OFICINA_CLAVE" ] && AUT=(-H "Authorization: Bearer $OFICINA_CLAVE")
+curl -sf "${AUT[@]}" "$OFI/trabajo" > /tmp/trabajo.json
 ```
 
-- Si `OFICINA_CLAVE` no existe o la respuesta es 401, para y explica en el resumen final que falta la llave
-  (se copia en la sala de Alex → tarjeta «Claude · encargos» → «Llave», y va en la variable de entorno
-  `OFICINA_CLAVE` del entorno de la rutina). No intentes nada más.
+En todas las llamadas de abajo, `"${AUT[@]}"` va en lugar de la cabecera `Authorization`.
+
+- Si la respuesta es 401, para y explica en el resumen final que falta la llave (se copia en la sala de Alex
+  → tarjeta «Claude · encargos» → «Llave», y se pone como secreto de red para
+  `oficina-virtual.alexbarras.workers.dev` con la cabecera `Authorization: Bearer …`, o como variable
+  `OFICINA_CLAVE` del entorno). No intentes nada más.
 - Nunca escribas la llave en archivos, commits ni mensajes.
 - `trabajo.json` trae: `hoy`, `encargos` (en estado `Pendiente` o `Aprobado`), `sabe_alex` (los datos
   verdaderos de Alacon y Novantis: úsalos como única fuente), `calendario` (contenido ya planificado) y
@@ -28,7 +34,7 @@ curl -sf -H "Authorization: Bearer $OFICINA_CLAVE" "$OFI/trabajo" > /tmp/trabajo
 Para cada uno, en orden de `fecha_limite`:
 
 1. Márcalo como empezado:
-   `curl -sf -X POST -H "Authorization: Bearer $OFICINA_CLAVE" -H 'Content-Type: application/json' -d '{"estado":"En marcha"}' "$OFI/encargos/ID/estado"`
+   `curl -sf -X POST "${AUT[@]}" -H 'Content-Type: application/json' -d '{"estado":"En marcha"}' "$OFI/encargos/ID/estado"`
 2. Lee `titulo`, `tipo`, `detalle`, `cambios` (si el usuario pidió cambios, son lo más importante) y
    `conversacion_reciente`.
 3. Haz el trabajo siguiendo las reglas de abajo.
