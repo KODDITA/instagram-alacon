@@ -35,7 +35,8 @@ En todas las llamadas de abajo, `"${AUT[@]}"` va en lugar de la cabecera `Author
 Solo si `metricool_ultima` de `trabajo.json` es `null` o su `cuando` no es de hoy (fecha de Madrid):
 
 1. Con el conector de Metricool, `getScheduledPosts` de las dos marcas (Alacon `5914974` y Novantis `7052187`),
-   `timezone` `Europe/Madrid`, desde hace 7 días hasta dentro de 35 días.
+   `timezone` `Europe/Madrid`, desde hace 7 días hasta dentro de 35 días. Parámetros exactos: `brandId`, `fromDate` y
+   `toDate` con zona horaria (por ejemplo `2026-10-16T00:00:00+02:00`), y `timezone`.
 2. Escribe `/tmp/metricool.json` con este formato (una entrada por publicación y marca, sin inventar nada):
    ```json
    {"desde":"AAAA-MM-DD","hasta":"AAAA-MM-DD","publicaciones":[
