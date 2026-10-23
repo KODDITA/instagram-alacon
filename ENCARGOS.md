@@ -72,6 +72,12 @@ explícalo en el resumen final. Otros encargos aprobados (textos, dossieres…) 
 - Auxiliar de Enfermería no da el título de TCAE. No anunciar la app Portal del Alumno (aún no está disponible).
 - Valor primero (3-5 datos útiles y poco conocidos; nada obvio), puente al curso relacionado con su título
   exacto, cierre «Alacon Formación × Novantis Formación» y WhatsApp 611 12 62 64.
+- **Nada obvio.** El usuario rechaza los consejos que todo el mundo sabe: lavarse las manos, usar gel, cortar
+  la luz antes de cambiar una bombilla, beber agua… Busca datos útiles que casi nadie sabe y que sorprendan.
+  Ejemplos de historias que le gustaron: los lirios son muy tóxicos para los gatos; el chocolate es tóxico para
+  los perros; en una quemadura, ni hielo ni pasta de dientes, agua 20 minutos; el botón de prueba del
+  diferencial; las 3 señales del ictus y llamar al 112. Antes de entregar, pregúntate: «¿la mayoría de la gente
+  ya lo sabe?». Si la respuesta es sí, busca otro dato.
 - Días mundiales o fechas señaladas: compruébalos en una fuente fiable antes de usarlos.
 - Alacon y Novantis llevan siempre el mismo contenido, a la misma hora.
 - Si el encargo pide un guion o un texto, entrega solo el texto, sin consejos de grabación.
@@ -82,6 +88,9 @@ explícalo en el resumen final. Otros encargos aprobados (textos, dossieres…) 
 - Estilo: copia el de `disenos/` (por ejemplo `disenos/2026-10-29.html` y `disenos/estilo-historia.css`):
   azul `#006DA6` protagonista, gris `#4C4C4C`, Montserrat, logos en `disenos/assets/`. Rojo y amarillo solo en
   iconos de peligro o precaución. Respeta las zonas seguras de Instagram (arriba y abajo).
+- Las historias anteriores llevan ilustraciones o fondos de `disenos/fondos/` y `disenos/assets/`: reutilízalos
+  cuando encajen con el tema, o haz una ilustración sencilla en SVG dentro del propio HTML. Evita que la historia
+  sea solo texto sobre degradado.
 - Guarda cada diseño nuevo como `disenos/AAAA-MM-DD-tema.html`.
 - Para pasarlo a JPEG en la nube (aquí no hay `sips` ni el Chrome del Mac): usa Chrome sin cabeza de
   Playwright, por ejemplo
