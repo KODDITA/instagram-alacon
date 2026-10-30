@@ -1,0 +1,46 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Space+Mono:wght@700&display=block" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body { font-family: "Montserrat", sans-serif; position: relative; color: #fff;
+  background: radial-gradient(ellipse 900px 1100px at 50% 42%, #1E2A33 0%, #10171C 55%, #0A0E11 100%); }
+.lazo { position: absolute; top: 330px; left: 50%; transform: translateX(-50%); }
+.etiqueta { position: absolute; top: 870px; left: 0; right: 0; text-align: center;
+  font-family: "Space Mono", monospace; font-weight: 700; font-size: 28px; letter-spacing: 6px;
+  text-transform: uppercase; color: #9FB3C2; }
+.titular { position: absolute; top: 940px; left: 80px; right: 80px; text-align: center;
+  font-weight: 900; font-size: 84px; line-height: 1.08; letter-spacing: -1px; }
+.linea { position: absolute; top: 1170px; left: 50%; width: 120px; height: 4px; margin-left: -60px;
+  background: #4D8FB8; border-radius: 2px; }
+.nota { position: absolute; top: 1220px; left: 90px; right: 90px; text-align: center;
+  font-weight: 500; font-size: 38px; line-height: 1.4; color: #D5DEE5; }
+.nota b { font-weight: 700; color: #fff; }
+.logo { position: absolute; top: 1500px; left: 50%; transform: translateX(-50%);
+  width: 300px; padding: 16px 22px; background: #fff; border-radius: 22px; }
+.logo img { width: 100%; display: block; filter: grayscale(1); }
+</style></head><body>
+
+<!-- Lazo de luto -->
+<svg class="lazo" width="360" height="480" viewBox="0 0 360 480" aria-hidden="true">
+  <defs>
+    <linearGradient id="cinta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A4650"/><stop offset=".5" stop-color="#151B20"/><stop offset="1" stop-color="#05080A"/>
+    </linearGradient>
+  </defs>
+  <!-- tiras que caen y se cruzan -->
+  <path d="M152 210 L60 455 L105 440 L128 478 L212 230 Z" fill="url(#cinta)" stroke="#5A6874" stroke-width="2"/>
+  <path d="M208 210 L300 455 L255 440 L232 478 L148 230 Z" fill="url(#cinta)" stroke="#5A6874" stroke-width="2"/>
+  <!-- lazada -->
+  <path d="M180 230 C 70 170, 70 20, 180 10 C 290 20, 290 170, 180 230 Z
+           M180 175 C 130 140, 130 70, 180 62 C 230 70, 230 140, 180 175 Z"
+        fill="url(#cinta)" fill-rule="evenodd" stroke="#5A6874" stroke-width="2"/>
+</svg>
+
+<div class="etiqueta">28 · 10 · 2026</div>
+<div class="titular">Nuestro más sentido pésame</div>
+<div class="linea"></div>
+<div class="nota">Con las víctimas del accidente ferroviario de <b>Urda (Toledo)</b>, sus familias y seres queridos.</div>
+
+<div class="logo"><img src="assets/logo-alacon-novantis.png" alt="Alacon Formación × Novantis Formación"></div>
+</body></html>
