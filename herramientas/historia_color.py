@@ -205,6 +205,129 @@ def ilu_pata(P, D, L):
 <ellipse cx="680" cy="270" rx="52" ry="68" fill="#fff" transform="rotate(20 680 270)"/>
 {gotas}""")
 
+
+def ilu_oreja(P, D, L):
+    rayas = "".join(f'<path d="M{430+i*22} {470-i*8} L{500+i*6} {200+i*14}" stroke="{P}" stroke-width="8" stroke-linecap="round" opacity=".8"/>' for i in range(6))
+    return ficha(P, D, "32 MÚSCULOS", f"""
+<path d="M380 560 L520 110 L700 560 Z" fill="#fff"/>
+<path d="M440 520 L525 220 L640 520 Z" fill="{L}"/>{rayas}
+<path d="M720 300 A 120 120 0 0 1 720 480" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="4 22"/>
+<path d="M705 470 L735 500 L745 455 Z" fill="#fff"/>""")
+
+def ilu_bebes(P, D, L):
+    b = ""
+    for i in range(10):
+        x = 360 + (i % 5) * 90; y = 220 + (i // 5) * 190
+        c = "#FFD34D" if i == 7 else "#fff"
+        b += f'<circle cx="{x}" cy="{y}" r="30" fill="{c}"/><rect x="{x-32}" y="{y+38}" width="64" height="90" rx="30" fill="{c}"/>'
+    return ficha(P, D, "1 DE CADA 10", b)
+
+def ilu_placa(P, D, L):
+    return ficha(P, D, "1928", f"""
+<circle cx="540" cy="340" r="230" fill="{L}" opacity=".25"/>
+<circle cx="540" cy="340" r="230" fill="none" stroke="#fff" stroke-width="12"/>
+<circle cx="540" cy="340" r="205" fill="none" stroke="#fff" stroke-width="4" opacity=".5"/>
+<g fill="#fff" opacity=".85">{"".join(f'<circle cx="{x}" cy="{y}" r="12"/>' for x, y in [(380,250),(420,460),(690,250),(700,430),(610,520),(450,200),(660,170),(360,380),(720,340),(480,520)])}</g>
+<circle cx="560" cy="330" r="120" fill="{D}"/>
+<path d="M500 300 Q 530 250 580 270 Q 640 280 620 340 Q 610 400 550 390 Q 480 380 500 300 Z" fill="#B9D98A"/>""")
+
+def ilu_sabanas(P, D, L):
+    return ficha(P, D, "LEJÍA", f"""
+<rect x="300" y="300" width="400" height="200" rx="26" fill="#fff"/>
+<rect x="300" y="250" width="400" height="80" rx="30" fill="#fff"/>
+<rect x="320" y="270" width="140" height="50" rx="22" fill="{L}"/>
+<path d="M300 420 h400" stroke="{L}" stroke-width="8"/>
+<rect x="290" y="500" width="30" height="80" rx="10" fill="#fff"/><rect x="680" y="500" width="30" height="80" rx="10" fill="#fff"/>
+<g transform="translate(720 150)"><rect x="0" y="40" width="90" height="140" rx="22" fill="{L}"/><rect x="25" y="10" width="40" height="36" rx="8" fill="{L}"/></g>""")
+
+def ilu_huesos(P, D, L):
+    def hueso(x, y, w):
+        return f'<g transform="translate({x} {y})"><rect x="0" y="-12" width="{w}" height="24" rx="12" fill="#fff"/><circle cx="0" cy="-14" r="18" fill="#fff"/><circle cx="0" cy="14" r="18" fill="#fff"/><circle cx="{w}" cy="-14" r="18" fill="#fff"/><circle cx="{w}" cy="14" r="18" fill="#fff"/></g>'
+    return ficha(P, D, "HUESOS", f"""
+{hueso(330, 170, 160)}{hueso(600, 200, 140)}{hueso(360, 270, 110)}
+<text x="540" y="470" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="120" fill="#fff">300</text>
+<text x="540" y="580" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="64" fill="{L}">→ 206</text>""")
+
+def ilu_conejo(P, D, L):
+    return ficha(P, D, "NO VOMITAN", f"""
+<ellipse cx="470" cy="210" rx="45" ry="140" fill="#fff" transform="rotate(-10 470 210)"/>
+<ellipse cx="610" cy="210" rx="45" ry="140" fill="#fff" transform="rotate(10 610 210)"/>
+<ellipse cx="470" cy="210" rx="20" ry="100" fill="#F4B6C2" transform="rotate(-10 470 210)"/>
+<ellipse cx="610" cy="210" rx="20" ry="100" fill="#F4B6C2" transform="rotate(10 610 210)"/>
+<ellipse cx="540" cy="440" rx="190" ry="160" fill="#fff"/>
+<circle cx="470" cy="420" r="20" fill="{D}"/><circle cx="610" cy="420" r="20" fill="{D}"/>
+<path d="M525 470 L555 470 L540 488 Z" fill="#F4B6C2"/>
+<path d="M540 488 L540 510 M540 510 Q 520 530 505 515 M540 510 Q 560 530 575 515" stroke="{D}" stroke-width="5" fill="none" stroke-linecap="round"/>""")
+
+def ilu_ahogo(P, D, L):
+    return ficha(P, D, "SILENCIO", f"""
+<circle cx="540" cy="330" r="60" fill="#fff"/>
+<path d="M440 380 Q 400 330 380 260 M640 380 Q 680 330 700 260" stroke="#fff" stroke-width="26" stroke-linecap="round" fill="none"/>
+<path d="M260 400 Q 330 360 400 400 T 540 400 T 680 400 T 820 400 L820 620 L260 620 Z" fill="{L}" opacity=".9"/>
+<path d="M260 470 Q 330 440 400 470 T 540 470 T 680 470 T 820 470" stroke="#fff" stroke-width="8" fill="none" opacity=".5"/>
+<g transform="translate(700 160)"><path d="M0 0 h90 a20 20 0 0 1 20 20 v40 a20 20 0 0 1 -20 20 h-50 l-25 25 v-25 h-15 a20 20 0 0 1 -20 -20 v-40 a20 20 0 0 1 20 -20 Z" fill="#fff"/>
+<line x1="5" y1="90" x2="95" y2="-10" stroke="#D7362B" stroke-width="10" stroke-linecap="round"/></g>""")
+
+def ilu_vaso(P, D, L):
+    return ficha(P, D, "SED", f"""
+<path d="M420 160 L660 160 L630 560 L450 560 Z" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/>
+<path d="M445 420 L635 420 L630 560 L450 560 Z" fill="{L}"/>
+<path d="M445 420 Q 490 400 540 420 T 635 420" fill="none" stroke="#fff" stroke-width="6"/>
+<path d="M740 220 q -40 60 0 84 q 40 -24 0 -84 Z" fill="{L}"/>
+<text x="740" y="420" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="90" fill="#fff">?</text>""")
+
+def ilu_termostato(P, D, L):
+    return ficha(P, D, "−1 °C = −7 %", f"""
+<circle cx="540" cy="340" r="200" fill="#fff"/>
+<circle cx="540" cy="340" r="150" fill="{L}"/>
+<path d="M410 440 A 170 170 0 1 1 670 440" fill="none" stroke="{P}" stroke-width="16" stroke-linecap="round" stroke-dasharray="2 34"/>
+<text x="540" y="370" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="96" fill="{D}">20°</text>
+<path d="M470 410 h140" stroke="{D}" stroke-width="8" stroke-linecap="round"/>""")
+
+def ilu_016(P, D, L):
+    return ficha(P, D, "25N", f"""
+<rect x="420" y="110" width="240" height="420" rx="40" fill="#fff"/>
+<rect x="445" y="160" width="190" height="290" rx="16" fill="{L}"/>
+<text x="540" y="335" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="80" fill="{P}">016</text>
+<circle cx="540" cy="490" r="18" fill="{L}"/>""")
+
+def ilu_ojo_perro(P, D, L):
+    return ficha(P, D, "AZUL Y AMARILLO", f"""
+<path d="M300 330 Q 540 120 780 330 Q 540 540 300 330 Z" fill="#fff"/>
+<circle cx="540" cy="330" r="110" fill="#6B4A2B"/><circle cx="540" cy="330" r="52" fill="#111"/><circle cx="570" cy="300" r="18" fill="#fff"/>
+<rect x="380" y="510" width="140" height="70" rx="16" fill="#3B82F6"/><rect x="560" y="510" width="140" height="70" rx="16" fill="#F5C518"/>""")
+
+def ilu_tablet(P, D, L):
+    return ficha(P, D, "NOVIEMBRE", f"""
+<rect x="350" y="120" width="380" height="460" rx="36" fill="#fff"/>
+<rect x="375" y="150" width="330" height="390" rx="16" fill="{L}"/>
+<circle cx="540" cy="560" r="10" fill="{L}"/>
+<g transform="translate(540 330)"><rect x="-90" y="-30" width="180" height="120" rx="12" fill="{P}"/><rect x="-100" y="-60" width="200" height="40" rx="10" fill="{P}"/>
+<rect x="-14" y="-60" width="28" height="150" fill="#fff"/><path d="M0 -60 Q -60 -120 -70 -80 Q -60 -55 0 -60 Q 60 -55 70 -80 Q 60 -120 0 -60 Z" fill="#fff"/></g>""")
+
+def ilu_silla(P, D, L):
+    return ficha(P, D, "SI ESTÁS SOLO", f"""
+<rect x="330" y="140" width="40" height="440" rx="16" fill="#fff"/>
+<rect x="330" y="360" width="250" height="36" rx="14" fill="#fff"/>
+<rect x="540" y="390" width="36" height="190" rx="14" fill="#fff"/>
+<rect x="330" y="160" width="40" height="160" rx="16" fill="{L}"/>
+<path d="M650 330 L420 260" stroke="{L}" stroke-width="22" stroke-linecap="round"/>
+<path d="M410 240 L380 255 L420 290 Z" fill="{L}"/>
+<path d="M700 420 L700 260" stroke="#fff" stroke-width="14" stroke-linecap="round"/><path d="M680 270 L700 230 L720 270 Z" fill="#fff"/>""")
+
+def ilu_corazon(P, D, L):
+    return ficha(P, D, "LATIDOS / DÍA", f"""
+<path d="M540 520 C 300 380 320 160 450 160 C 510 160 540 210 540 230 C 540 210 570 160 630 160 C 760 160 780 380 540 520 Z" fill="#fff"/>
+<path d="M300 360 h120 l30 -60 l40 120 l30 -60 h260" stroke="{P}" stroke-width="12" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="540" y="590" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="54" fill="#fff">100.000</text>""")
+
+def ilu_pastilla(P, D, L):
+    return ficha(P, D, "PARACETAMOL", f"""
+<g transform="rotate(-30 540 330)"><rect x="370" y="260" width="340" height="140" rx="70" fill="#fff"/><rect x="540" y="260" width="170" height="140" rx="0" fill="{L}"/>
+<rect x="640" y="260" width="70" height="140" rx="70" fill="{L}"/></g>
+<circle cx="540" cy="330" r="230" fill="none" stroke="#D7362B" stroke-width="18"/>
+<line x1="380" y1="490" x2="700" y2="170" stroke="#D7362B" stroke-width="18" stroke-linecap="round"/>""")
+
 HISTORIAS = [
     dict(fecha="2026-11-04", tema="tension", paleta="violeta", ilu=ilu_tension,
          kicker="Tensión arterial", titular='Cruzar las piernas te <span class="marca">sube la tensión</span>',
@@ -248,6 +371,58 @@ SEMANA_2 = [
     dict(fecha="2026-11-15", tema="patas-perro", paleta="ciruela", ilu=ilu_pata,
          kicker="Perros", titular='Los perros sudan <span class="marca">por las patas</span>',
          nota="Sus almohadillas tienen glándulas del sudor", curso="Curso de Auxiliar de Veterinaria"),
+]
+
+SSCS0108 = "Certificado SSCS0108<br><small>Atención sociosanitaria a personas en el domicilio</small>"
+SEMANA_3 = [
+    dict(fecha="2026-11-16", tema="orejas-gato", paleta="ciruela", ilu=ilu_oreja,
+         kicker="Gatos", titular='Cada oreja de gato tiene <span class="marca">32 músculos</span>',
+         nota="Por eso la giran casi 180 grados", curso="Curso de Auxiliar de Veterinaria"),
+    dict(fecha="2026-11-17", tema="prematuros", paleta="violeta", ilu=ilu_bebes,
+         kicker="Día Mundial de la Prematuridad", titular='1 de cada 10 bebés <span class="marca">nace prematuro</span>',
+         nota="Antes de la semana 37 de embarazo", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-18", tema="penicilina", paleta="salvia", ilu=ilu_placa,
+         kicker="Día Europeo de los Antibióticos", titular='La penicilina nació <span class="marca">de un descuido</span>',
+         nota="Fleming dejó unas placas sin limpiar en 1928", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-19", tema="sabanas-blancas", paleta="oceano", ilu=ilu_sabanas,
+         kicker="Hoteles", titular='Las sábanas son blancas <span class="marca">por la lejía</span>',
+         nota="Se pueden blanquear y se ve que están limpias", curso="Curso de Camarera de Pisos"),
+    dict(fecha="2026-11-20", tema="huesos-bebe", paleta="marca", ilu=ilu_huesos,
+         kicker="Día Universal del Niño", titular='Un bebé nace con <span class="marca">unos 300 huesos</span>',
+         nota="Al crecer se fusionan hasta quedar 206", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-21", tema="conejos", paleta="indigo", ilu=ilu_conejo,
+         kicker="Conejos", titular='Los conejos <span class="marca">no pueden vomitar</span>',
+         nota="Si comen algo malo, no lo pueden expulsar", curso="Curso de Auxiliar de Veterinaria"),
+    dict(fecha="2026-11-22", tema="ahogamiento", paleta="petroleo", ilu=ilu_ahogo,
+         kicker="Socorrismo", titular='Quien se ahoga <span class="marca">no grita ni pide ayuda</span>',
+         nota="No puede: lucha por respirar en silencio", curso="Curso de Socorrista"),
+]
+SEMANA_4 = [
+    dict(fecha="2026-11-23", tema="sed-mayores", paleta="salvia", ilu=ilu_vaso,
+         kicker="Personas mayores", titular='Con la edad <span class="marca">se siente menos sed</span>',
+         nota="Ofrécele agua aunque no la pida", curso=SSCS0108),
+    dict(fecha="2026-11-24", tema="calefaccion", paleta="oceano", ilu=ilu_termostato,
+         kicker="Calefacción", titular='Baja 1 °C <span class="marca">y ahorra un 7 %</span>',
+         nota="Entre 19 y 21 °C es suficiente en casa", curso="Curso de Técnico de Climatización y Mantenimiento"),
+    dict(fecha="2026-11-25", tema="016", paleta="violeta", ilu=ilu_016,
+         kicker="Contra la violencia de género", titular='El 016 <span class="marca">no deja rastro</span> en la factura',
+         nota="Gratis y 24 horas. Borra la llamada del móvil",
+         cta='<div class="curso"><span>Teléfono 016 · Atención a víctimas</span></div>'),
+    dict(fecha="2026-11-26", tema="colores-perro", paleta="indigo", ilu=ilu_ojo_perro,
+         kicker="Perros", titular='Los perros ven <span class="marca">azul y amarillo</span>',
+         nota="No ven en blanco y negro: les cuesta el rojo y el verde", curso="Curso de Auxiliar de Veterinaria"),
+    dict(fecha="2026-11-27", tema="black-friday", paleta="noche", ilu=ilu_tablet,
+         kicker="Black Friday", titular='Matricúlate y <span class="marca">llévate una tablet</span>',
+         nota="Tablet Samsung de regalo en noviembre", curso="Alacon Formación × Novantis Formación"),
+    dict(fecha="2026-11-28", tema="atragantamiento", paleta="petroleo", ilu=ilu_silla,
+         kicker="Atragantamiento", titular='¿Te atragantas solo? <span class="marca">Usa una silla</span>',
+         nota="Empuja el abdomen contra el respaldo, fuerte y hacia arriba", curso="Formación en Emergencias Sanitarias"),
+    dict(fecha="2026-11-29", tema="latidos", paleta="ciruela", ilu=ilu_corazon,
+         kicker="Corazón", titular='Tu corazón late <span class="marca">100.000 veces al día</span>',
+         nota="Unos 2.500 millones de latidos en una vida", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-30", tema="paracetamol-gatos", paleta="marca", ilu=ilu_pastilla, peligro=True,
+         kicker="Gatos", titular='El paracetamol <span class="marca">es mortal para los gatos</span>',
+         nota="Su hígado no puede eliminarlo: ni media pastilla", curso="Curso de Auxiliar de Veterinaria"),
 ]
 
 def construir(h):
@@ -296,14 +471,13 @@ body {{ font-family: "Montserrat", sans-serif; color: {texto}; position: relativ
 <div class="bloque"><div class="kicker"><span class="chip">{icono}<span>{h["kicker"]}</span></span></div>
 <div class="titular">{h["titular"]}</div>
 <div class="nota">{h["nota"]}</div>
-<div class="curso"><span>{h["curso"]}</span></div>
-<div class="wa">{WA}<span>Pide info</span><b>611 12 62 64</b></div></div>
+{h.get("cta") or f'<div class="curso"><span>{h["curso"]}</span></div><div class="wa">{WA}<span>Pide info</span><b>611 12 62 64</b></div>'}</div>
 </body></html>
 '''
 
 if __name__ == "__main__":
     base = os.path.join(os.path.dirname(__file__), "..", "disenos")
-    for semana, lista in (("semana-2026-11-02", HISTORIAS), ("semana-2026-11-09", SEMANA_2)):
+    for semana, lista in (("semana-2026-11-02", HISTORIAS), ("semana-2026-11-09", SEMANA_2), ("semana-2026-11-16", SEMANA_3), ("semana-2026-11-23", SEMANA_4)):
         carpeta = os.path.join(base, semana)
         os.makedirs(carpeta, exist_ok=True)
         for h in lista:
