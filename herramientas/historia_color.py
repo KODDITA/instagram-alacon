@@ -241,7 +241,7 @@ SEMANA_2 = [
          curso="Curso de Auxiliar de Enfermería"),
     dict(fecha="2026-11-13", tema="planta-13", paleta="noche", ilu=ilu_ascensor,
          kicker="Viernes 13", titular='Muchos hoteles <span class="marca">no tienen planta 13</span>',
-         nota="Del 12 se pasa directamente al 14", curso="Curso de Recepcionista de Hotel"),
+         nota="Por superstición: el 13 da mala suerte.<br>Del 12 se pasa al 14", curso="Curso de Recepcionista de Hotel"),
     dict(fecha="2026-11-14", tema="diabetes", paleta="marca", ilu=ilu_insulina,
          kicker="Día Mundial de la Diabetes", titular='Hoy nació <span class="marca">el padre de la insulina</span>',
          nota="Frederick Banting nació un 14 de noviembre", curso="Curso de Auxiliar de Enfermería"),
