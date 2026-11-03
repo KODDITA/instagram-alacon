@@ -1,0 +1,26 @@
+{
+  "nota": "Black Friday: matricúlate y llévate una tablet",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-27T09:00:00 Europe/Madrid",
+      "id": "415156326",
+      "uuid": "7182769843838796389",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=7182769843838796389"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-27T09:00:00 Europe/Madrid",
+      "id": "415156377",
+      "uuid": "981058111110269554",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=981058111110269554"
+    }
+  ]
+}

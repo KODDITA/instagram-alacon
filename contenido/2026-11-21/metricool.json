@@ -1,0 +1,26 @@
+{
+  "nota": "Un masaje baja la hormona del estrés",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-21T09:00:00 Europe/Madrid",
+      "id": "415155207",
+      "uuid": "4949609653856716532",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=4949609653856716532"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-21T09:00:00 Europe/Madrid",
+      "id": "415155260",
+      "uuid": "4262511848287848547",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=4262511848287848547"
+    }
+  ]
+}

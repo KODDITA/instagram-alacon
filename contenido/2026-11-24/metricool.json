@@ -1,0 +1,26 @@
+{
+  "nota": "Baja 1 °C y ahorra un 7 %",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-24T09:00:00 Europe/Madrid",
+      "id": "415155878",
+      "uuid": "6082882576527806389",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=6082882576527806389"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-24T09:00:00 Europe/Madrid",
+      "id": "415155959",
+      "uuid": "5140191556635479387",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=5140191556635479387"
+    }
+  ]
+}

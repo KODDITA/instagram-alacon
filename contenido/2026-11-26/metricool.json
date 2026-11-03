@@ -1,0 +1,26 @@
+{
+  "nota": "Los perros ven azul y amarillo",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-26T09:00:00 Europe/Madrid",
+      "id": "415156190",
+      "uuid": "1040982588426178534",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=1040982588426178534"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-26T09:00:00 Europe/Madrid",
+      "id": "415156256",
+      "uuid": "-8048548929114126758",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-8048548929114126758"
+    }
+  ]
+}

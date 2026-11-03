@@ -1,0 +1,26 @@
+{
+  "nota": "El 016 no deja rastro en la factura",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-25T09:00:00 Europe/Madrid",
+      "id": "415156047",
+      "uuid": "-1510640942552956079",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-1510640942552956079"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-25T09:00:00 Europe/Madrid",
+      "id": "415156102",
+      "uuid": "-5862450765955383045",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-5862450765955383045"
+    }
+  ]
+}

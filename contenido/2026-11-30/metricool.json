@@ -1,0 +1,26 @@
+{
+  "nota": "El paracetamol es mortal para los gatos",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-30T09:00:00 Europe/Madrid",
+      "id": "415156787",
+      "uuid": "-8290387389565351174",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-8290387389565351174"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-30T09:00:00 Europe/Madrid",
+      "id": "415156881",
+      "uuid": "8176115526101189505",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=8176115526101189505"
+    }
+  ]
+}
