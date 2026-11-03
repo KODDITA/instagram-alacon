@@ -11,6 +11,9 @@ PALETAS = {
     "salvia":   ("#2E7D5B", "#1F5A41", "#D5EDE2", "#E2F2EA", "#F5FBF8", "#A9DBC3"),
     "noche":    ("#7FC4EE", "#FFFFFF", "#1E3A52", "#0D2235", "#13304A", "#2F6F9E"),
     "marca":    ("#006DA6", "#00527E", "#BFDCF0", "#E1EEF7", "#F4F9FC", "#94C6E8"),
+    "indigo":   ("#3949AB", "#283593", "#D9DDF5", "#E6E9F8", "#F6F7FD", "#B5BEEE"),
+    "petroleo": ("#1F6F8B", "#154E63", "#D2E7EF", "#DFEEF3", "#F4FAFC", "#A6CFDD"),
+    "ciruela":  ("#8E3B78", "#662955", "#F1DDEB", "#F5E7F1", "#FCF7FA", "#E2B9D6"),
 }
 
 WA = '<svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true"><path fill="#25D366" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3z"/><path fill="#fff" d="M22.6 18.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>'
@@ -129,6 +132,79 @@ def ilu_gato(P, D, L):
 <ellipse cx="0" cy="0" rx="72" ry="44" fill="{P}"/><path d="M-40 -30 L-10 30 M0 -40 L30 40" stroke="#fff" stroke-width="10" opacity=".6"/></g>
 <text x="700" y="470" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="64" fill="#fff">?</text>''')
 
+
+def ilu_nariz(P, D, L):
+    puntos = "".join(f'<circle cx="{x}" cy="{y}" r="9" fill="{D}" opacity=".55"/>'
+                     for x in range(380, 720, 34) for y in range(250, 470, 30)
+                     if ((x-540)/170)**2 + ((y-350)/115)**2 < 1)
+    return ficha(P, D, "HUELLA NASAL", f"""
+<path d="M540 470 Q 360 470 350 340 Q 345 230 450 225 Q 500 222 540 260 Q 580 222 630 225 Q 735 230 730 340 Q 720 470 540 470 Z" fill="{L}"/>
+{puntos}
+<path d="M420 330 Q 440 290 480 300 Q 500 340 470 360 Q 430 370 420 330 Z" fill="{D}"/>
+<path d="M660 330 Q 640 290 600 300 Q 580 340 610 360 Q 650 370 660 330 Z" fill="{D}"/>
+<path d="M540 380 L540 470" stroke="{D}" stroke-width="10" stroke-linecap="round"/>
+<text x="540" y="580" text-anchor="middle" font-family="Space Mono" font-weight="700" font-size="34" fill="#fff" opacity=".8">ID ÚNICO</text>""")
+
+def ilu_altura(P, D, L):
+    marcas = "".join(f'<line x1="300" y1="{y}" x2="{335 if y % 50 else 360}" y2="{y}" stroke="#fff" stroke-width="5" opacity=".7"/>' for y in range(110, 600, 25))
+    def persona(x, y0, c):
+        return f'<circle cx="{x}" cy="{y0+40}" r="38" fill="{c}"/><rect x="{x-55}" y="{y0+90}" width="110" height="200" rx="50" fill="{c}"/><rect x="{x-45}" y="{y0+270}" width="38" height="{560-y0-270}" rx="18" fill="{c}"/><rect x="{x+7}" y="{y0+270}" width="38" height="{560-y0-270}" rx="18" fill="{c}"/>'
+    return ficha(P, D, "−1 CM", f"""
+<rect x="290" y="100" width="80" height="500" fill="none"/>{marcas}
+{persona(500, 140, "#fff")}{persona(680, 168, L)}
+<line x1="440" y1="140" x2="740" y2="140" stroke="#fff" stroke-width="4" stroke-dasharray="10 10" opacity=".7"/>
+<circle cx="500" cy="105" r="0"/>
+<g transform="translate(500 600)"><circle r="0"/></g>
+<text x="500" y="615" text-anchor="middle" font-family="Space Mono" font-weight="700" font-size="30" fill="#fff">8:00</text>
+<text x="680" y="615" text-anchor="middle" font-family="Space Mono" font-weight="700" font-size="30" fill="{L}">22:00</text>""")
+
+def ilu_aire(P, D, L):
+    return ficha(P, D, "1902", f"""
+<rect x="330" y="130" width="420" height="150" rx="24" fill="#fff"/>
+<rect x="360" y="230" width="360" height="22" rx="11" fill="{L}"/>
+<path d="M370 170 h200" stroke="{L}" stroke-width="12" stroke-linecap="round"/>
+<circle cx="690" cy="180" r="14" fill="{P}"/>
+<path d="M400 300 q 20 40 0 80 M540 300 q 20 40 0 80 M680 300 q 20 40 0 80" fill="none" stroke="{L}" stroke-width="10" stroke-linecap="round"/>
+<g transform="translate(400 420) rotate(-10)"><rect width="150" height="190" rx="8" fill="#fff"/><path d="M25 40 h100 M25 75 h100 M25 110 h70" stroke="{L}" stroke-width="10" stroke-linecap="round"/></g>
+<g transform="translate(560 430) rotate(8)"><rect width="150" height="180" rx="8" fill="#fff"/><path d="M25 40 h100 M25 75 h100 M25 110 h70" stroke="{L}" stroke-width="10" stroke-linecap="round"/></g>""")
+
+def ilu_pulmones(P, D, L):
+    return ficha(P, D, "MENORES DE 5", f"""
+<rect x="525" y="110" width="30" height="170" rx="15" fill="#fff"/>
+<path d="M540 270 Q 500 300 470 300 M540 270 Q 580 300 610 300" stroke="#fff" stroke-width="22" fill="none" stroke-linecap="round"/>
+<path d="M500 230 Q 370 220 340 380 Q 320 560 460 570 Q 505 570 505 520 L505 290 Q 505 240 500 230 Z" fill="{L}"/>
+<path d="M580 230 Q 710 220 740 380 Q 760 560 620 570 Q 575 570 575 520 L575 290 Q 575 240 580 230 Z" fill="{L}"/>
+<path d="M470 300 Q 430 360 430 440 M470 330 Q 420 400 390 460 M610 300 Q 650 360 650 440 M610 330 Q 660 400 690 460" stroke="{D}" stroke-width="10" fill="none" stroke-linecap="round" opacity=".6"/>""")
+
+def ilu_ascensor(P, D, L):
+    botones = ""
+    for i, n in enumerate(["15", "14", "12", "11"]):
+        y = 140 + i * 115
+        botones += f'<circle cx="540" cy="{y}" r="44" fill="#fff"/><text x="540" y="{y+16}" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="44" fill="#0D2235">{n}</text>'
+    return ficha(P, D, "VIERNES 13", f"""
+<rect x="430" y="80" width="220" height="510" rx="30" fill="{L}"/>
+{botones}
+<g transform="translate(720 300)"><circle r="56" fill="none" stroke="#D7362B" stroke-width="12"/><text y="20" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="54" fill="#fff">13</text><line x1="-40" y1="40" x2="40" y2="-40" stroke="#D7362B" stroke-width="12" stroke-linecap="round"/></g>""")
+
+def ilu_insulina(P, D, L):
+    return ficha(P, D, "14·11·1891", f"""
+<circle cx="450" cy="340" r="160" fill="none" stroke="{L}" stroke-width="44"/>
+<g transform="translate(650 200)">
+<rect x="0" y="40" width="110" height="250" rx="22" fill="#fff"/>
+<rect x="15" y="0" width="80" height="50" rx="12" fill="{L}"/>
+<rect x="0" y="150" width="110" height="80" fill="{L}"/>
+<text x="55" y="203" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="30" fill="{D}">INS</text></g>""")
+
+def ilu_pata(P, D, L):
+    gotas = "".join(f'<path d="M{x} {y} q -18 30 0 42 q 18 -12 0 -42 Z" fill="{L}"/>' for x, y in [(330, 160), (760, 230), (720, 470), (360, 470)])
+    return ficha(P, D, "ALMOHADILLAS", f"""
+<ellipse cx="540" cy="420" rx="140" ry="120" fill="#fff"/>
+<ellipse cx="400" cy="270" rx="52" ry="68" fill="#fff" transform="rotate(-20 400 270)"/>
+<ellipse cx="490" cy="200" rx="52" ry="70" fill="#fff"/>
+<ellipse cx="590" cy="200" rx="52" ry="70" fill="#fff"/>
+<ellipse cx="680" cy="270" rx="52" ry="68" fill="#fff" transform="rotate(20 680 270)"/>
+{gotas}""")
+
 HISTORIAS = [
     dict(fecha="2026-11-04", tema="tension", paleta="violeta", ilu=ilu_tension,
          kicker="Tensión arterial", titular='Cruzar las piernas te <span class="marca">sube la tensión</span>',
@@ -146,6 +222,32 @@ HISTORIAS = [
     dict(fecha="2026-11-08", tema="radiologia", paleta="marca", ilu=ilu_rayosx,
          kicker="Día Internacional de la Radiología", titular='La 1.ª radiografía: <span class="marca">una mano con anillo</span>',
          nota="Röntgen descubrió los rayos X el 8 de noviembre de 1895", curso="Curso de Auxiliar de Enfermería"),
+]
+
+SEMANA_2 = [
+    dict(fecha="2026-11-09", tema="nariz-perro", paleta="indigo", ilu=ilu_nariz,
+         kicker="Perros", titular='Su nariz es única, <span class="marca">como una huella</span>',
+         nota="No hay dos perros con el mismo dibujo", curso="Curso de Auxiliar de Veterinaria"),
+    dict(fecha="2026-11-10", tema="altura", paleta="violeta", ilu=ilu_altura,
+         kicker="Cuerpo humano", titular='Por la noche mides <span class="marca">hasta 1 cm menos</span>',
+         nota="Los discos de la columna se aplastan durante el día", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-11", tema="aire-acondicionado", paleta="petroleo", ilu=ilu_aire,
+         kicker="Aire acondicionado", titular='Se inventó <span class="marca">para una imprenta</span>',
+         nota="Carrier lo creó en 1902 para cuidar el papel",
+         curso="Curso de Técnico de Climatización y Mantenimiento"),
+    dict(fecha="2026-11-12", tema="neumonia", paleta="salvia", ilu=ilu_pulmones,
+         kicker="Día Mundial de la Neumonía", titular='La infección que <span class="marca">más niños mata</span>',
+         nota="Es la neumonía, en menores de 5 años",
+         curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-13", tema="planta-13", paleta="noche", ilu=ilu_ascensor,
+         kicker="Viernes 13", titular='Muchos hoteles <span class="marca">no tienen planta 13</span>',
+         nota="Del 12 se pasa directamente al 14", curso="Curso de Recepcionista de Hotel"),
+    dict(fecha="2026-11-14", tema="diabetes", paleta="marca", ilu=ilu_insulina,
+         kicker="Día Mundial de la Diabetes", titular='Hoy nació <span class="marca">el padre de la insulina</span>',
+         nota="Frederick Banting nació un 14 de noviembre", curso="Curso de Auxiliar de Enfermería"),
+    dict(fecha="2026-11-15", tema="patas-perro", paleta="ciruela", ilu=ilu_pata,
+         kicker="Perros", titular='Los perros sudan <span class="marca">por las patas</span>',
+         nota="Sus almohadillas tienen glándulas del sudor", curso="Curso de Auxiliar de Veterinaria"),
 ]
 
 def construir(h):
@@ -200,9 +302,11 @@ body {{ font-family: "Montserrat", sans-serif; color: {texto}; position: relativ
 '''
 
 if __name__ == "__main__":
-    carpeta = os.path.join(os.path.dirname(__file__), "..", "disenos", "semana-2026-11-02")
-    os.makedirs(carpeta, exist_ok=True)
-    for h in HISTORIAS:
-        ruta = os.path.join(carpeta, f'{h["fecha"]}-{h["tema"]}.html')
-        open(ruta, "w").write(construir(h))
-        print(ruta)
+    base = os.path.join(os.path.dirname(__file__), "..", "disenos")
+    for semana, lista in (("semana-2026-11-02", HISTORIAS), ("semana-2026-11-09", SEMANA_2)):
+        carpeta = os.path.join(base, semana)
+        os.makedirs(carpeta, exist_ok=True)
+        for h in lista:
+            ruta = os.path.join(carpeta, f'{h["fecha"]}-{h["tema"]}.html')
+            open(ruta, "w").write(construir(h))
+            print(ruta)
