@@ -85,20 +85,64 @@ def ilu_rayosx(P, D, L):
 <g transform="rotate(-3 505 360)"><rect x="475" y="262" width="60" height="18" rx="9" fill="none" stroke="#FFD34D" stroke-width="10"/></g>
 <text x="290" y="70" font-family="Space Mono" font-weight="700" font-size="34" fill="#fff" opacity=".8">1895</text>'''
 
+def ficha(P, D, etiqueta, dentro):
+    """Marco tipo placa (el estilo de la radiografía) con una etiqueta arriba a la izquierda."""
+    fondo = "#0A1A29" if D == "#FFFFFF" else D  # en la paleta oscura, la placa va más oscura que el fondo
+    return f'''<rect x="250" y="10" width="580" height="620" rx="36" fill="{fondo}"/>
+<rect x="250" y="10" width="580" height="620" rx="36" fill="none" stroke="{P}" stroke-width="12"/>
+{dentro}
+<text x="290" y="70" font-family="Space Mono" font-weight="700" font-size="34" fill="#fff" opacity=".8">{etiqueta}</text>'''
+
+def ilu_avion_ola(P, D, L):
+    return ficha(P, D, "800 km/h", f'''
+<g transform="translate(540 220) rotate(-8)" fill="#fff">
+  <path d="M-190 0 Q-190 -22 -160 -22 L150 -22 Q200 -22 210 0 Q200 22 150 22 L-160 22 Q-190 22 -190 0 Z"/>
+  <path d="M-20 -18 L-90 -120 L-50 -120 L60 -18 Z"/><path d="M-20 18 L-90 120 L-50 120 L60 18 Z"/>
+  <path d="M-170 -10 L-200 -70 L-175 -70 L-130 -10 Z"/>
+</g>
+<path d="M300 520 Q 360 380 470 380 Q 560 380 560 450 Q 510 420 480 455 Q 455 490 500 520 Z" fill="{L}"/>
+<path d="M280 560 Q 340 535 400 560 T 520 560 T 640 560 T 760 560 T 800 560" fill="none" stroke="{L}" stroke-width="12" stroke-linecap="round" opacity=".6"/>
+<path d="M600 470 h150 M640 510 h110 M600 430 h90" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".7"/>''')
+
+def ilu_musica(P, D, L):
+    return ficha(P, D, "MEMORIA", f'''
+<circle cx="520" cy="350" r="200" fill="#111"/>
+<circle cx="520" cy="350" r="170" fill="none" stroke="#333" stroke-width="4"/>
+<circle cx="520" cy="350" r="140" fill="none" stroke="#333" stroke-width="4"/>
+<circle cx="520" cy="350" r="110" fill="none" stroke="#333" stroke-width="4"/>
+<path d="M420 240 A150 150 0 0 1 560 205" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+<circle cx="520" cy="350" r="62" fill="{L}"/><circle cx="520" cy="350" r="10" fill="#111"/>
+<g fill="#fff"><ellipse cx="720" cy="230" rx="30" ry="22" transform="rotate(-20 720 230)"/><rect x="742" y="110" width="12" height="122"/>
+<path d="M742 110 L790 130 L790 160 L754 145 Z"/>
+<ellipse cx="760" cy="430" rx="24" ry="18" transform="rotate(-20 760 430)"/><rect x="777" y="330" width="10" height="102"/></g>''')
+
+def ilu_gato(P, D, L):
+    return ficha(P, D, "GEN TAS1R2", f'''
+<path d="M330 260 L360 120 L440 210 Z" fill="#fff"/><path d="M640 210 L720 120 L750 260 Z" fill="#fff"/>
+<ellipse cx="540" cy="330" rx="230" ry="190" fill="#fff"/>
+<path d="M362 160 L415 210 L375 228 Z M718 160 L665 210 L705 228 Z" fill="#F4B6C2"/>
+<ellipse cx="460" cy="310" rx="26" ry="36" fill="#0D2235"/><ellipse cx="620" cy="310" rx="26" ry="36" fill="#0D2235"/>
+<path d="M525 380 L555 380 L540 400 Z" fill="{P}"/>
+<path d="M540 400 Q 520 430 495 420 M540 400 Q 560 430 585 420" fill="none" stroke="#0D2235" stroke-width="6" stroke-linecap="round"/>
+<path d="M440 385 L330 370 M440 400 L330 410 M640 385 L750 370 M640 400 L750 410" stroke="#9AA9B6" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(700 540)"><path d="M-70 0 L-100 -25 L-100 25 Z M70 0 L100 -25 L100 25 Z" fill="{L}"/>
+<ellipse cx="0" cy="0" rx="72" ry="44" fill="{P}"/><path d="M-40 -30 L-10 30 M0 -40 L30 40" stroke="#fff" stroke-width="10" opacity=".6"/></g>
+<text x="700" y="470" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="64" fill="#fff">?</text>''')
+
 HISTORIAS = [
     dict(fecha="2026-11-04", tema="tension", paleta="violeta", ilu=ilu_tension,
          kicker="Tensión arterial", titular='Cruzar las piernas te <span class="marca">sube la tensión</span>',
          nota="Mídela sentado y tras 5 minutos de reposo", curso="Curso de Auxiliar de Enfermería"),
-    dict(fecha="2026-11-05", tema="tsunamis", paleta="oceano", ilu=ilu_tsunami,
-         kicker="Día Mundial de los Tsunamis", titular='¿Se retira el mar? <span class="marca">Sube a zona alta</span>',
-         nota="Un tsunami son varias olas, no una", curso="Formación en Emergencias Sanitarias"),
-    dict(fecha="2026-11-06", tema="ulceras", paleta="salvia", ilu=ilu_cama,
-         kicker="Personas encamadas", titular='Cambia de postura <span class="marca">cada 2 horas</span>',
-         nota="Así se previenen las úlceras por presión",
-         curso="Certificado SSCS0108<br><small>Atención sociosanitaria a personas en el domicilio</small>"),
-    dict(fecha="2026-11-07", tema="convulsiones", paleta="noche", ilu=ilu_convulsion, peligro=True,
-         kicker="Convulsiones", titular='Nunca le metas <span class="marca">nada en la boca</span>',
-         nota="La lengua no se traga.<br>Más de 5 minutos: llama al 112", curso="Formación en Emergencias Sanitarias"),
+    dict(fecha="2026-11-05", tema="tsunamis", paleta="oceano", ilu=ilu_avion_ola,
+         kicker="Día Mundial de los Tsunamis", titular='Un tsunami viaja <span class="marca">tan rápido como un avión</span>',
+         nota="En alta mar va a unos 800 km/h", curso="Formación en Emergencias Sanitarias"),
+    dict(fecha="2026-11-06", tema="musica-alzheimer", paleta="salvia", ilu=ilu_musica, top=940,
+         kicker="Alzhéimer", titular='Su música favorita <span class="marca">despierta recuerdos</span>',
+         nota="La memoria musical resiste al alzhéimer",
+         curso="Certificado SSCS0208<br><small>Atención sociosanitaria a personas dependientes en instituciones sociales</small>"),
+    dict(fecha="2026-11-07", tema="gatos-dulce", paleta="noche", ilu=ilu_gato,
+         kicker="Gatos", titular='Los gatos <span class="marca">no notan el sabor dulce</span>',
+         nota="Les falta el receptor del dulce", curso="Curso de Auxiliar de Veterinaria"),
     dict(fecha="2026-11-08", tema="radiologia", paleta="marca", ilu=ilu_rayosx,
          kicker="Día Internacional de la Radiología", titular='La 1.ª radiografía: <span class="marca">una mano con anillo</span>',
          nota="Röntgen descubrió los rayos X el 8 de noviembre de 1895", curso="Curso de Auxiliar de Enfermería"),
@@ -123,7 +167,7 @@ body {{ font-family: "Montserrat", sans-serif; color: {texto}; position: relativ
 .logo {{ position: absolute; top: 160px; left: 50%; transform: translateX(-50%); width: 380px; padding: 18px 26px;
   background: #fff; border-radius: 26px; box-shadow: 0 14px 40px rgba(0,0,0,.10); }}
 .logo img {{ width: 100%; display: block; }}
-.bloque {{ position: absolute; top: 975px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; }}
+.bloque {{ position: absolute; top: {h.get("top", 975)}px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; }}
 .kicker {{ text-align: center; }}
 .chip {{ display: inline-flex; align-items: center; gap: 14px; background: #fff; border-radius: 999px; padding: 14px 30px;
   font-family: "Space Mono", monospace; font-weight: 700; font-size: 28px; letter-spacing: 3px; text-transform: uppercase;
@@ -136,7 +180,7 @@ body {{ font-family: "Montserrat", sans-serif; color: {texto}; position: relativ
 .curso {{ margin-top: 30px; text-align: center; }}
 .curso span {{ display: inline-block; background: {D if not oscuro else P}; color: {"#fff" if not oscuro else "#0D2235"};
   font-weight: 900; font-size: 34px; padding: 14px 34px; border-radius: 22px; line-height: 1.2; max-width: 900px; }}
-.curso small {{ font-weight: 700; font-size: 26px; }}
+.curso small {{ font-weight: 700; font-size: 24px; }}
 .wa {{ margin-top: 22px; display: inline-flex; align-items: center;
   gap: 16px; background: #fff; border-radius: 999px; padding: 14px 34px; border: 4px solid {P};
   box-shadow: 0 12px 34px rgba(0,0,0,.12); white-space: nowrap; }}
