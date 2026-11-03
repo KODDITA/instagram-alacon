@@ -120,6 +120,25 @@ explícalo en el resumen final. Otros encargos aprobados (textos, dossieres…) 
   y `page.screenshot({type:'jpeg', quality:90})`. Comprueba que pesa menos de 1,8 MB.
 - Los vídeos no se pueden montar en la nube: entrega el guion y di que el vídeo se monta en el Mac.
 
+## Lo que le gusta al usuario (noviembre de 2026)
+
+- **Datos curiosos, no consejos.** La historia que más le gustó: «La 1.ª radiografía: una mano con anillo» (Röntgen,
+  8-nov-1895). Busca datos sorprendentes, históricos o curiosos con su porqué. Rechazó por obvias: medir la tensión,
+  cambios de postura cada 2 horas, «no metas nada en la boca en una convulsión», «si el mar se retira, sube a zona alta».
+- **Estilo «ficha»:** ilustración SVG dentro de una placa oscura con una etiqueta pequeña en Space Mono arriba a la izquierda
+  (como la radiografía). Generador: `herramientas/historia_color.py`.
+- **Colores variados:** misma maqueta, pero cambia la paleta cada día (violeta, océano, salvia, noche, marca, índigo,
+  petróleo, ciruela). Rojo y amarillo solo en iconos de peligro o detalles de la ilustración.
+- **Curso siempre abajo**, en una etiqueta justo encima del WhatsApp.
+- **Variedad de cursos:** no solo veterinaria y enfermería. Usa también electricidad («Curso de Electricista»), masaje
+  («Curso de Quiromasaje»), deporte («Curso de Monitor Deportivo»), hostelería, socorrismo, climatización, sociosanitario.
+  Los nombres de electricidad, masaje y deporte son genéricos aprobados por el usuario mientras no haya uno oficial.
+- **Solo historias.** No hacer posts salvo que los pida.
+- Fechas de luto o temas delicados (25N): sin curso ni WhatsApp.
+- Se le enseñan todas las imágenes de la semana (o del mes) juntas y él aprueba; luego se programan a las 9:00 en las dos marcas.
+- Metricool coge las imágenes desde `https://raw.githubusercontent.com/KODDITA/instagram-alacon/<rama>/contenido/AAAA-MM-DD/historia.jpg`
+  (sirve cualquier rama subida; no hace falta tocar `main`).
+
 ## Al terminar la vuelta
 
 Resume en pocas líneas qué encargos has entregado o terminado y qué ha fallado.

@@ -328,6 +328,36 @@ def ilu_pastilla(P, D, L):
 <circle cx="540" cy="330" r="230" fill="none" stroke="#D7362B" stroke-width="18"/>
 <line x1="380" y1="490" x2="700" y2="170" stroke="#D7362B" stroke-width="18" stroke-linecap="round"/>""")
 
+
+def ilu_pajaro(P, D, L):
+    return ficha(P, D, "UN SOLO CABLE", f"""
+<path d="M250 330 Q 540 390 830 330" stroke="#fff" stroke-width="8" fill="none"/>
+<path d="M250 430 Q 540 490 830 430" stroke="{L}" stroke-width="8" fill="none" opacity=".7"/>
+<g transform="translate(500 270)"><ellipse cx="0" cy="0" rx="80" ry="55" fill="#fff"/><circle cx="62" cy="-38" r="34" fill="#fff"/>
+<path d="M92 -40 L120 -32 L92 -26 Z" fill="#FFB74D"/><circle cx="72" cy="-44" r="6" fill="{D}"/>
+<path d="M-70 -10 Q -140 -30 -150 10 Q -110 10 -70 15 Z" fill="{L}"/>
+<path d="M-15 50 L-15 82 M20 50 L20 82" stroke="#FFB74D" stroke-width="6" stroke-linecap="round"/></g>
+<path d="M700 150 L670 230 L705 230 L680 300" stroke="#FFD34D" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330 540 h420" stroke="#fff" stroke-width="6" stroke-dasharray="12 14" opacity=".5"/>""")
+
+def ilu_masaje(P, D, L):
+    return ficha(P, D, "CORTISOL ↓", f"""
+<path d="M380 600 Q 370 380 450 300 Q 540 250 630 300 Q 710 380 700 600 Z" fill="#fff"/>
+<circle cx="540" cy="200" r="70" fill="#fff"/>
+<path d="M440 420 a 40 40 0 1 1 60 30 M580 420 a 40 40 0 1 1 60 30" fill="none" stroke="{P}" stroke-width="10" stroke-linecap="round"/>
+<path d="M495 455 l10 -18 l-22 -2 Z M635 455 l10 -18 l-22 -2 Z" fill="{P}"/>
+<path d="M760 180 v260" stroke="{L}" stroke-width="16" stroke-linecap="round"/><path d="M730 410 L760 460 L790 410 Z" fill="{L}"/>""")
+
+def ilu_pesas(P, D, L):
+    return ficha(P, D, "RECUPERACIÓN", f"""
+<rect x="330" y="330" width="420" height="30" rx="15" fill="#fff"/>
+<rect x="340" y="250" width="50" height="190" rx="14" fill="#fff"/><rect x="400" y="275" width="40" height="140" rx="12" fill="{L}"/>
+<rect x="690" y="250" width="50" height="190" rx="14" fill="#fff"/><rect x="640" y="275" width="40" height="140" rx="12" fill="{L}"/>
+<path d="M700 130 a 60 60 0 1 0 60 80 a 48 48 0 1 1 -60 -80 Z" fill="#FFD34D"/>
+<text x="400" y="190" font-family="Montserrat" font-weight="900" font-size="60" fill="#fff" opacity=".85">z</text>
+<text x="440" y="150" font-family="Montserrat" font-weight="900" font-size="44" fill="#fff" opacity=".6">z</text>
+<path d="M360 530 h360" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".4"/>""")
+
 HISTORIAS = [
     dict(fecha="2026-11-04", tema="tension", paleta="violeta", ilu=ilu_tension,
          kicker="Tensión arterial", titular='Cruzar las piernas te <span class="marca">sube la tensión</span>',
@@ -384,15 +414,15 @@ SEMANA_3 = [
     dict(fecha="2026-11-18", tema="penicilina", paleta="salvia", ilu=ilu_placa,
          kicker="Día Europeo de los Antibióticos", titular='La penicilina nació <span class="marca">de un descuido</span>',
          nota="Fleming dejó unas placas sin limpiar en 1928", curso="Curso de Auxiliar de Enfermería"),
-    dict(fecha="2026-11-19", tema="sabanas-blancas", paleta="oceano", ilu=ilu_sabanas,
-         kicker="Hoteles", titular='Las sábanas son blancas <span class="marca">por la lejía</span>',
-         nota="Se pueden blanquear y se ve que están limpias", curso="Curso de Camarera de Pisos"),
+    dict(fecha="2026-11-19", tema="pajaros-cables", paleta="oceano", ilu=ilu_pajaro,
+         kicker="Electricidad", titular='Los pájaros <span class="marca">no se electrocutan</span>',
+         nota="Tocan un solo cable: la corriente no los cruza", curso="Curso de Electricista"),
     dict(fecha="2026-11-20", tema="huesos-bebe", paleta="marca", ilu=ilu_huesos,
          kicker="Día Universal del Niño", titular='Un bebé nace con <span class="marca">unos 300 huesos</span>',
          nota="Al crecer se fusionan hasta quedar 206", curso="Curso de Auxiliar de Enfermería"),
-    dict(fecha="2026-11-21", tema="conejos", paleta="indigo", ilu=ilu_conejo,
-         kicker="Conejos", titular='Los conejos <span class="marca">no pueden vomitar</span>',
-         nota="Si comen algo malo, no lo pueden expulsar", curso="Curso de Auxiliar de Veterinaria"),
+    dict(fecha="2026-11-21", tema="masaje-cortisol", paleta="indigo", ilu=ilu_masaje,
+         kicker="Masaje", titular='Un masaje baja <span class="marca">la hormona del estrés</span>',
+         nota="Reduce el cortisol y sube la serotonina", curso="Curso de Quiromasaje"),
     dict(fecha="2026-11-22", tema="ahogamiento", paleta="petroleo", ilu=ilu_ahogo,
          kicker="Socorrismo", titular='Quien se ahoga <span class="marca">no grita ni pide ayuda</span>',
          nota="No puede: lucha por respirar en silencio", curso="Curso de Socorrista"),
@@ -414,9 +444,9 @@ SEMANA_4 = [
     dict(fecha="2026-11-27", tema="black-friday", paleta="noche", ilu=ilu_tablet,
          kicker="Black Friday", titular='Matricúlate y <span class="marca">llévate una tablet</span>',
          nota="Tablet Samsung de regalo en noviembre", curso="Alacon Formación × Novantis Formación"),
-    dict(fecha="2026-11-28", tema="atragantamiento", paleta="petroleo", ilu=ilu_silla,
-         kicker="Atragantamiento", titular='¿Te atragantas solo? <span class="marca">Usa una silla</span>',
-         nota="Empuja el abdomen contra el respaldo, fuerte y hacia arriba", curso="Formación en Emergencias Sanitarias"),
+    dict(fecha="2026-11-28", tema="musculos-descanso", paleta="petroleo", ilu=ilu_pesas,
+         kicker="Deporte", titular='Los músculos crecen <span class="marca">cuando descansas</span>',
+         nota="Al entrenar se rompen fibras; al descansar se reparan", curso="Curso de Monitor Deportivo"),
     dict(fecha="2026-11-29", tema="latidos", paleta="ciruela", ilu=ilu_corazon,
          kicker="Corazón", titular='Tu corazón late <span class="marca">100.000 veces al día</span>',
          nota="Unos 2.500 millones de latidos en una vida", curso="Curso de Auxiliar de Enfermería"),
