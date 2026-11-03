@@ -1,0 +1,51 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Space+Mono:wght@700&display=block" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body { font-family: "Montserrat", sans-serif; color: #FFFFFF; position: relative;
+  background: linear-gradient(180deg, #0D2235 0%, #13304A 100%); }
+.circulo { position: absolute; border-radius: 50%; background: #1E3A52; opacity: .55; }
+.ilu { position: absolute; top: 310px; left: 0; }
+.logo { position: absolute; top: 160px; left: 50%; transform: translateX(-50%); width: 380px; padding: 18px 26px;
+  background: #fff; border-radius: 26px; box-shadow: 0 14px 40px rgba(0,0,0,.10); }
+.logo img { width: 100%; display: block; }
+.bloque { position: absolute; top: 975px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; }
+.kicker { text-align: center; }
+.chip { display: inline-flex; align-items: center; gap: 14px; background: #fff; border-radius: 999px; padding: 14px 30px;
+  font-family: "Space Mono", monospace; font-weight: 700; font-size: 28px; letter-spacing: 3px; text-transform: uppercase;
+  color: #B02A21; box-shadow: 0 10px 30px rgba(0,0,0,.10); }
+.titular { margin: 28px 70px 0; text-align: center; font-weight: 900; font-size: 78px;
+  line-height: 1.07; letter-spacing: -1px; color: #FFFFFF; }
+.marca { background: linear-gradient(transparent 62%, #2F6F9E 62%, #2F6F9E 92%, transparent 92%); padding: 0 6px; }
+.nota { margin: 22px 110px 0; text-align: center; font-weight: 700; font-size: 38px;
+  line-height: 1.3; color: #CFE3F2; }
+.curso { margin-top: 30px; text-align: center; }
+.curso span { display: inline-block; background: #7FC4EE; color: #0D2235;
+  font-weight: 900; font-size: 34px; padding: 14px 34px; border-radius: 22px; line-height: 1.2; max-width: 900px; }
+.curso small { font-weight: 700; font-size: 26px; }
+.wa { margin-top: 22px; display: inline-flex; align-items: center;
+  gap: 16px; background: #fff; border-radius: 999px; padding: 14px 34px; border: 4px solid #7FC4EE;
+  box-shadow: 0 12px 34px rgba(0,0,0,.12); white-space: nowrap; }
+.wa b { font-weight: 900; font-size: 50px; color: #0D2235; letter-spacing: 1px; }
+.wa span { font-family: "Space Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 2px; color: #4C4C4C; text-transform: uppercase; }
+</style></head><body>
+<div class="circulo" style="width:520px;height:520px;left:-200px;top:820px"></div>
+<div class="circulo" style="width:380px;height:380px;right:-140px;top:260px"></div>
+<svg class="ilu" width="1080" height="640" viewBox="0 0 1080 640" aria-hidden="true"><circle cx="380" cy="320" r="190" fill="#1E3A52" stroke="#7FC4EE" stroke-width="14"/>
+<rect x="355" y="100" width="50" height="40" rx="10" fill="#7FC4EE"/>
+<path d="M380 320 L380 190" stroke="#7FC4EE" stroke-width="16" stroke-linecap="round"/>
+<path d="M380 320 L470 380" stroke="#7FC4EE" stroke-width="16" stroke-linecap="round"/>
+<circle cx="380" cy="320" r="18" fill="#7FC4EE"/>
+<text x="380" y="460" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="64" fill="#7FC4EE">5 min</text>
+<rect x="640" y="150" width="230" height="380" rx="40" fill="#fff"/>
+<rect x="665" y="200" width="180" height="250" rx="16" fill="#1E3A52"/>
+<text x="755" y="355" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="84" fill="#7FC4EE">112</text>
+<circle cx="755" cy="490" r="18" fill="#1E3A52"/></svg>
+<div class="logo"><img src="../assets/logo-alacon-novantis.png" alt="Alacon Formación × Novantis Formación"></div>
+<div class="bloque"><div class="kicker"><span class="chip"><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 21h22L12 2z" fill="#D7362B"/><rect x="11" y="9" width="2" height="6" rx="1" fill="#fff"/><circle cx="12" cy="17.5" r="1.2" fill="#fff"/></svg><span>Convulsiones</span></span></div>
+<div class="titular">Nunca le metas <span class="marca">nada en la boca</span></div>
+<div class="nota">La lengua no se traga.<br>Más de 5 minutos: llama al 112</div>
+<div class="curso"><span>Formación en Emergencias Sanitarias</span></div>
+<div class="wa"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true"><path fill="#25D366" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3z"/><path fill="#fff" d="M22.6 18.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Pide info</span><b>611 12 62 64</b></div></div>
+</body></html>
