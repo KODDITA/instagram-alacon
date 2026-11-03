@@ -1,0 +1,26 @@
+{
+  "nota": "La nariz del perro es única",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-09T09:00:00 Europe/Madrid",
+      "id": "415130828",
+      "uuid": "1432021406106471554",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=1432021406106471554"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-09T09:00:00 Europe/Madrid",
+      "id": "415131015",
+      "uuid": "-3875109120929675617",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-3875109120929675617"
+    }
+  ]
+}

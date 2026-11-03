@@ -1,0 +1,26 @@
+{
+  "nota": "Los perros sudan por las patas",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-15T09:00:00 Europe/Madrid",
+      "id": "415133568",
+      "uuid": "-7412617259938003872",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-7412617259938003872"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-15T09:00:00 Europe/Madrid",
+      "id": "415133676",
+      "uuid": "5379178082040762068",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=5379178082040762068"
+    }
+  ]
+}

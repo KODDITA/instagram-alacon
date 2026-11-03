@@ -1,0 +1,26 @@
+{
+  "nota": "La primera radiografía: una mano con anillo",
+  "archivo": "historia.jpg",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-08T09:00:00 Europe/Madrid",
+      "id": "415130529",
+      "uuid": "2006353367643802860",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=2006353367643802860"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-08T09:00:00 Europe/Madrid",
+      "id": "415130652",
+      "uuid": "-8669705022743951671",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-8669705022743951671"
+    }
+  ]
+}
