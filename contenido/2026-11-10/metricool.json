@@ -1,0 +1,10 @@
+{
+  "nota": "Noticia: Alacon y Novantis se unen a ACEB (foto real de la firma, sin IA). Etiqueta @acebbenalmadena en la imagen.",
+  "archivos": ["post-aceb.jpg", "historia-aceb.jpg"],
+  "metricool": [
+    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram POST, facebook POST, linkedin, tiktok (foto)", "hora": "2026-11-10T17:10:00 Europe/Madrid", "id": "423348495", "uuid": "7455580065708654721", "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=7455580065708654721"},
+    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram POST, linkedin", "hora": "2026-11-10T17:10:00 Europe/Madrid", "id": "423348531", "uuid": "-4284474716652681682", "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-4284474716652681682"},
+    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram STORY, facebook STORY", "hora": "2026-11-10T17:12:00 Europe/Madrid", "id": "423348904", "uuid": "291403986411407623", "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=291403986411407623"},
+    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram STORY", "hora": "2026-11-10T17:12:00 Europe/Madrid", "id": "423348932", "uuid": "3424146959713062008", "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=3424146959713062008"}
+  ]
+}
