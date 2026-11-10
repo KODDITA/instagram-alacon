@@ -1,10 +1,56 @@
 {
   "nota": "Noticia: Alacon y Novantis se unen a ACEB (foto real de la firma, sin IA). Etiqueta @acebbenalmadena en la imagen.",
-  "archivos": ["post-aceb.jpg", "historia-aceb.jpg"],
+  "archivos": [
+    "post-aceb.jpg",
+    "historia-aceb.jpg"
+  ],
   "metricool": [
-    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram POST, facebook POST, linkedin, tiktok (foto)", "hora": "2026-11-10T17:10:00 Europe/Madrid", "id": "423348495", "uuid": "7455580065708654721", "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=7455580065708654721"},
-    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram POST, linkedin", "hora": "2026-11-10T17:10:00 Europe/Madrid", "id": "423348531", "uuid": "-4284474716652681682", "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-4284474716652681682"},
-    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram STORY, facebook STORY", "hora": "2026-11-10T17:12:00 Europe/Madrid", "id": "423348904", "uuid": "291403986411407623", "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=291403986411407623"},
-    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram STORY", "hora": "2026-11-10T17:12:00 Europe/Madrid", "id": "423348932", "uuid": "3424146959713062008", "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=3424146959713062008"}
-  ]
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram POST, facebook POST, linkedin, tiktok (foto)",
+      "hora": "2026-11-10T17:10:00 Europe/Madrid",
+      "id": "423352348",
+      "uuid": "7455580065708654721",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=7455580065708654721",
+      "nota": "Editado en Metricool a las 17:06 (texto más corto, sin lista, WhatsApp ni hashtags). Publicado 17:10."
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram POST, linkedin",
+      "hora": "2026-11-10T17:10:00 Europe/Madrid",
+      "id": "423348531",
+      "uuid": "-4284474716652681682",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-4284474716652681682"
+    },
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram STORY, facebook STORY",
+      "hora": "2026-11-10T17:12:00 Europe/Madrid",
+      "id": "423348904",
+      "uuid": "291403986411407623",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=291403986411407623"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram STORY",
+      "hora": "2026-11-10T17:12:00 Europe/Madrid",
+      "id": "423348932",
+      "uuid": "3424146959713062008",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=3424146959713062008"
+    }
+  ],
+  "publicado": {
+    "alacon_instagram": "https://www.instagram.com/p/DfkTdIgjV3D/",
+    "alacon_facebook": "https://facebook.com/756114273768071/posts/1161270116585816",
+    "alacon_linkedin": "https://linkedin.com/feed/update/urn:li:share:7525953048037277696",
+    "alacon_tiktok": "https://www.tiktok.com/@alaconformacion/video/7706575930726075670",
+    "novantis_instagram": "https://www.instagram.com/p/DfkTf_piFdQ/",
+    "novantis_linkedin": "https://linkedin.com/feed/update/urn:li:share:7525953145282236416",
+    "alacon_historia": "https://www.instagram.com/stories/alaconformacion/4027430593557463599",
+    "novantis_historia": "https://www.instagram.com/stories/novantisformacion/4027430550138033043"
+  }
 }
