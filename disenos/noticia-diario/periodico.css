@@ -1,0 +1,15 @@
+/* Periódico ilustrado (propio, en HTML/CSS) para las piezas de «Salimos en prensa» */
+.periodico{position:absolute;background:#FBFAF6;border-radius:10px;box-shadow:0 30px 70px rgba(0,82,126,.28),0 4px 0 #E7E3D8;
+  padding:34px 38px;color:#2B2B2B;transform:rotate(-3deg)}
+.periodico .cabecera{font-family:"Playfair Display",Georgia,serif;font-weight:900;text-align:center;letter-spacing:.5px;line-height:1}
+.periodico .filete{border-top:3px solid #2B2B2B;border-bottom:1px solid #2B2B2B;height:6px;margin:14px 0 10px}
+.periodico .seccion{font-family:"Space Mono",monospace;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6B6B6B;display:flex;justify-content:space-between}
+.periodico .titulo{font-family:"Playfair Display",Georgia,serif;font-weight:900;line-height:1.12;margin-top:16px}
+.periodico .titulo em{font-style:normal;background:linear-gradient(transparent 58%,#94C6E8 58%,#94C6E8 94%,transparent 94%)}
+.periodico .cuerpo{display:flex;gap:22px;margin-top:20px}
+.periodico .imagen{flex:0 0 46%;background:#fff;border:2px solid #E2E2E2;border-radius:6px;display:flex;align-items:center;justify-content:center;padding:14px}
+.periodico .imagen img{width:100%;display:block}
+.periodico .columnas{flex:1;display:flex;flex-direction:column;gap:11px;padding-top:4px}
+.periodico .columnas i{display:block;height:9px;border-radius:5px;background:#D6D3CB}
+.periodico .columnas i:nth-child(4n){width:70%}
+.periodico .columnas i:nth-child(5n+2){width:88%}
