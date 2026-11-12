@@ -1,14 +1,56 @@
 {
   "nota": "Convocatoria abierta en Málaga (SSCS0208, ADG305_1, COMT0111), centro oficial presencial. Foto de fondo generada con Higgsfield (marcas de IA en true). Aprobado por el usuario el 12-nov.",
-  "archivos": ["post-convocatoria-abierta.jpg", "historia-convocatoria-abierta.jpg"],
+  "archivos": [
+    "post-convocatoria-abierta.jpg",
+    "historia-convocatoria-abierta.jpg"
+  ],
   "metricool": [
-    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram POST, facebook POST, linkedin, tiktok (foto)", "hora": "2026-11-12T11:32:00 Europe/Madrid", "id": "425490681", "uuid": "-5466536102911718625",
-     "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-5466536102911718625"},
-    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram POST, linkedin", "hora": "2026-11-12T11:32:00 Europe/Madrid", "id": "425490708", "uuid": "-1517863718669827231",
-     "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-1517863718669827231"},
-    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram STORY, facebook STORY", "hora": "2026-11-12T11:34:00 Europe/Madrid", "id": "425490884", "uuid": "-1599452443766731429",
-     "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-1599452443766731429"},
-    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram STORY", "hora": "2026-11-12T11:34:00 Europe/Madrid", "id": "425490919", "uuid": "-3896944468551907016",
-     "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-3896944468551907016"}
-  ]
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram POST, facebook POST, linkedin, tiktok (foto)",
+      "hora": "2026-11-12T11:32:00 Europe/Madrid",
+      "id": "425490681",
+      "uuid": "-5466536102911718625",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-5466536102911718625"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram POST, linkedin",
+      "hora": "2026-11-12T11:32:00 Europe/Madrid",
+      "id": "425490708",
+      "uuid": "-1517863718669827231",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-1517863718669827231"
+    },
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram STORY, facebook STORY",
+      "hora": "2026-11-12T11:34:00 Europe/Madrid",
+      "id": "425490884",
+      "uuid": "-1599452443766731429",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-1599452443766731429"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram STORY",
+      "hora": "2026-11-12T11:34:00 Europe/Madrid",
+      "id": "425490919",
+      "uuid": "-3896944468551907016",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-3896944468551907016"
+    }
+  ],
+  "publicado": {
+    "alacon_instagram": "https://www.instagram.com/p/Dfo2X-RCvyh/",
+    "alacon_facebook": "https://facebook.com/756114273768071/posts/1163188756393952",
+    "alacon_linkedin": "https://linkedin.com/feed/update/urn:li:share:7526592787903971330",
+    "alacon_tiktok": "https://www.tiktok.com/@alaconformacion/video/7707231032747019542",
+    "novantis_instagram": "https://www.instagram.com/p/Dfo2bRwCh9F/",
+    "novantis_linkedin": "https://linkedin.com/feed/update/urn:li:share:7526592902555353088",
+    "alacon_historia": "https://www.instagram.com/stories/alaconformacion/4028709987936822716",
+    "alacon_historia_facebook": "https://facebook.com/756114273768071/posts/1120245047291892",
+    "novantis_historia": "https://www.instagram.com/stories/novantisformacion/4028709941581524198"
+  }
 }
