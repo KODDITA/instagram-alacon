@@ -1,0 +1,30 @@
+:root{--brand:#006DA6;--deep:#003A5C;--ink:#00263D;--light:#BFDCF0;--sky:#5FB8EC;--grey:#4C4C4C}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;overflow:hidden}
+body{font-family:"Montserrat",sans-serif;background:var(--deep);position:relative;color:#fff}
+.foto{position:absolute;top:0;left:0;width:1080px;object-fit:cover}
+.velo{position:absolute;inset:0}
+.rayos{position:absolute;left:50%;transform:translateX(-50%);opacity:.9}
+.logo{position:absolute;background:#fff;border-radius:20px;padding:12px 18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.logo img{width:100%;display:block}
+.lugar{position:absolute;display:inline-flex;align-items:center;gap:12px;background:var(--brand);border:3px solid #fff;border-radius:999px;padding:12px 26px;
+  font-family:"Space Mono",monospace;font-weight:700;font-size:26px;letter-spacing:3px;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.lugar svg{width:28px;height:28px}
+.hero{position:absolute;left:0;right:0;text-align:center}
+.hero .l1{display:inline-block;font-weight:900;letter-spacing:-3px;line-height:.9;text-transform:uppercase;white-space:nowrap;
+  text-shadow:0 8px 0 var(--brand),0 18px 40px rgba(0,0,0,.45)}
+.banda{position:relative;margin:22px auto 0;width:max-content;transform:rotate(-4deg)}
+.banda .l2{position:relative;display:block;background:#fff;color:var(--brand);font-weight:900;letter-spacing:-6px;line-height:.86;text-transform:uppercase;white-space:nowrap;
+  padding:14px 40px 22px;border-radius:24px;box-shadow:14px 14px 0 var(--sky),0 30px 60px rgba(0,0,0,.4)}
+.chispa{position:absolute;width:64px;height:64px}
+.sub{font-weight:800;text-transform:uppercase;letter-spacing:6px;color:var(--light);text-align:center}
+.cursos{position:absolute;left:56px;right:56px;display:flex;flex-direction:column}
+.curso{display:flex;align-items:center;gap:20px;background:#fff;border-radius:22px;color:#1F2A33;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.curso .ico{flex:none;border-radius:16px;background:var(--brand);display:grid;place-items:center}
+.curso .cod{font-family:"Space Mono",monospace;font-weight:700;letter-spacing:2px;color:var(--brand)}
+.curso .nom{font-weight:800;line-height:1.1;letter-spacing:-.3px}
+.pie{position:absolute;left:56px;right:56px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.pie .ok{display:flex;flex-direction:column;gap:6px;font-weight:800;color:#fff}
+.pie .ok span{display:flex;align-items:center;gap:10px}
+.pie .ok svg{width:30px;height:30px;flex:none}
+.wa{display:flex;align-items:center;gap:12px;background:#fff;color:var(--brand);border-radius:999px;padding:14px 28px 14px 16px;font-weight:900;letter-spacing:.5px;box-shadow:0 10px 26px rgba(0,0,0,.3)}
