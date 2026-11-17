@@ -1,0 +1,21 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<style>
+/* 1080×1350 · foto real enmarcada para el carrusel. Uso: foto.html?f=f2.jpg */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{background:#E1EEF7;position:relative}
+.fondo{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:blur(40px) saturate(1.1);opacity:.55}
+.foto{position:absolute;left:60px;right:60px;top:50%;transform:translateY(-50%);border-radius:36px;overflow:hidden;border:8px solid #fff;box-shadow:0 24px 60px rgba(0,82,126,.25)}
+.foto img{width:100%;display:block}
+.logo{position:absolute;bottom:44px;left:50%;transform:translateX(-50%);background:#fff;border-radius:20px;padding:12px 18px;width:280px;box-shadow:0 10px 30px rgba(0,82,126,.16)}
+.logo img{width:100%;display:block}
+</style></head><body>
+<div class="fondo" id="fondo"></div>
+<div class="foto"><img id="img" alt=""></div>
+<div class="logo"><img src="assets/logo-alacon-novantis.png" alt="Alacon Formación × Novantis Formación"></div>
+<script>
+const f=new URLSearchParams(location.search).get('f')||'f2.jpg';
+document.getElementById('img').src='assets/'+f;
+document.getElementById('fondo').style.backgroundImage='url(assets/'+f+')';
+</script>
+</body></html>
