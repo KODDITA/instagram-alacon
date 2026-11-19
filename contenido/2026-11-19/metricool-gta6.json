@@ -2,9 +2,33 @@
   "tema": "Carrusel GTA 6: estudiar antes (2013) y ahora (2026)",
   "hora": "2026-11-19T14:15:00 Europe/Zurich",
   "autoPublish": false,
-  "nota": "Publicación desde el móvil (aviso de Metricool) para poner la canción en Instagram",
+  "nota": "14:15 con aviso al móvil: NO llegó a Instagram (marcado como publicado sin enlace). Reprogramado en automático, sin música, a las 17:08.",
   "posts": [
-    {"marca": "alaconformacion", "blogId": 5914974, "red": "instagram POST (carrusel 6)", "id": 434200570, "uuid": "2840642737745973080"},
-    {"marca": "novantisformacion", "blogId": 7052187, "red": "instagram POST (carrusel 6)", "id": 434200603, "uuid": "-5745434589480727347"}
+    {
+      "marca": "alaconformacion",
+      "blogId": 5914974,
+      "red": "instagram POST (carrusel 6)",
+      "id": 434200570,
+      "uuid": "2840642737745973080"
+    },
+    {
+      "marca": "novantisformacion",
+      "blogId": 7052187,
+      "red": "instagram POST (carrusel 6)",
+      "id": 434200603,
+      "uuid": "-5745434589480727347"
+    }
+  ],
+  "reintento_17_08": [
+    {
+      "marca": "alaconformacion",
+      "id": 434419661,
+      "url": "https://www.instagram.com/p/Df7eucoDXLV/"
+    },
+    {
+      "marca": "novantisformacion",
+      "id": 434420557,
+      "url": "https://www.instagram.com/p/Df7ew1VisPK/"
+    }
   ]
 }
