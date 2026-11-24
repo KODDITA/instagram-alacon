@@ -1,0 +1,26 @@
+{
+  "nota": "25N: lazo morado, «No estás sola», 016 (formato C, música suave, sin captación)",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-25n.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-25T09:00:00 Europe/Madrid",
+      "id": "439998912",
+      "uuid": "2485656257717422427",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=2485656257717422427"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-25T09:00:00 Europe/Madrid",
+      "id": "439999234",
+      "uuid": "9103682342939148795",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=9103682342939148795"
+    }
+  ]
+}

@@ -19,3 +19,4 @@ body { font-family: "Montserrat", sans-serif; position: relative; }
 .grande { font-weight: 900; font-size: 150px; line-height: 1; color: #1b1b1b; background: #fff; border-radius: 22px; padding: 8px 26px 14px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .morado { background: #6B2C91; }
 .pre.morado { font-size: 30px; line-height: 1.25; }
+.sub { background: rgba(20,20,20,.55); border-radius: 12px; padding: 4px 14px 6px; text-shadow: none; }

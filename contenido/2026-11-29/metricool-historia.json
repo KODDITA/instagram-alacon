@@ -1,0 +1,26 @@
+{
+  "nota": "Sociosanitario: cambiar de postura cada 2 horas ayuda a prevenir úlceras (SSCS0208)",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-sociosanitario.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-29T09:00:00 Europe/Madrid",
+      "id": "440006670",
+      "uuid": "-1865042962349013168",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-1865042962349013168"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-29T09:00:00 Europe/Madrid",
+      "id": "440006715",
+      "uuid": "6794513929456799710",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=6794513929456799710"
+    }
+  ]
+}

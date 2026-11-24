@@ -1,0 +1,26 @@
+{
+  "nota": "Informática: el primer «bug» documentado fue una polilla real (Harvard, 1947)",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-informatica.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-26T09:00:00 Europe/Madrid",
+      "id": "439999261",
+      "uuid": "1914408964526523382",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=1914408964526523382"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-26T09:00:00 Europe/Madrid",
+      "id": "439999283",
+      "uuid": "-5642918475638684289",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-5642918475638684289"
+    }
+  ]
+}

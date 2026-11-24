@@ -1,0 +1,26 @@
+{
+  "nota": "Emergencias: puedes llamar al 112 aunque no tengas saldo",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-112.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-30T09:00:00 Europe/Madrid",
+      "id": "440006745",
+      "uuid": "2047218214255610606",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=2047218214255610606"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-30T09:00:00 Europe/Madrid",
+      "id": "440006783",
+      "uuid": "8518167671034233175",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=8518167671034233175"
+    }
+  ]
+}

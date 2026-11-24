@@ -1,0 +1,26 @@
+{
+  "nota": "Día del Maestro: gracias a docentes y tutores (formato C, sin captación)",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-maestro.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-27T09:00:00 Europe/Madrid",
+      "id": "440006593",
+      "uuid": "8175368968728232519",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=8175368968728232519"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-27T09:00:00 Europe/Madrid",
+      "id": "440006642",
+      "uuid": "1240291999819382831",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=1240291999819382831"
+    }
+  ]
+}
