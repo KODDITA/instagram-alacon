@@ -1,0 +1,26 @@
+{
+  "nota": "Electricidad: el diferencial de casa detecta fugas de 30 mA",
+  "video": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/historia-electricidad.mp4",
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-28T09:00:00 Europe/Madrid",
+      "id": "440012753",
+      "uuid": "-1246935747720230694",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=-1246935747720230694"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram",
+      "tipo": "STORY",
+      "hora": "2026-11-28T09:00:00 Europe/Madrid",
+      "id": "440012791",
+      "uuid": "7675718643254905908",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=7675718643254905908"
+    }
+  ]
+}
