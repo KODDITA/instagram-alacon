@@ -1,0 +1,53 @@
+{
+"01": {"f":"C","mus":"suave-dias-mundiales","capas":[
+  {"pre":"1 de diciembre","pre_estilo":"background:#C8102E","lineas":["Día Mundial de la","Lucha contra el Sida"],"tam":60,"wa":false,"y":1200},
+  {"lineas":["La prueba del VIH","es <em>gratuita</em> y confidencial"],"tam":56,"wa":false,"y":1230},
+  {"lineas":["Pídela en tu","centro de salud."],"sub":"Saberlo a tiempo lo cambia todo","tam":62,"wa":false,"y":1210}]},
+"02": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["El turrón de Jijona y el","de Alicante tienen <em>IGP</em>"],"tam":54,"sub":"Indicación Geográfica Protegida","curso":"Formación de cocina"}},
+"03": {"f":"C","mus":"suave-dias-mundiales","capas":[
+  {"pre":"3 de diciembre","lineas":["Día Internacional de las","Personas con Discapacidad"],"tam":54,"wa":false,"y":1200},
+  {"lineas":["1 de cada 6 personas","vive con una <em>discapacidad</em>"],"tam":56,"sub":"En el mundo, según la OMS","wa":false,"y":1210},
+  {"lineas":["Inclusión es que","<em>nadie</em> se quede fuera."],"tam":62,"wa":false,"y":1230}]},
+"04": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Las luces LED de Navidad","gastan hasta un <em>80 % menos</em>"],"tam":54,"sub":"que las bombillas de toda la vida","curso":"Formación de electricidad"}},
+"05": {"f":"C","mus":"suave-dias-mundiales","capas":[
+  {"pre":"5 de diciembre","lineas":["Día Internacional","de los Voluntarios"],"tam":64,"wa":false,"y":1200},
+  {"lineas":["Dar tu tiempo","también es <em>cuidar</em>."],"tam":64,"wa":false,"y":1230},
+  {"lineas":["Gracias a quienes","ayudan sin pedir nada."],"tam":62,"wa":false,"y":1230}]},
+"06": {"f":"A","mus":"suave-dias-mundiales","capa":{"pre":"6 de diciembre","lineas":["Día de la Constitución"],"tam":66,"sub":"Aprobada en referéndum el 6 de diciembre de 1978","wa":false,"y":1250}},
+"07": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["En hostelería, <em>«PAX»</em>","es el número de personas"],"tam":56,"sub":"«Mesa para 4 PAX» = mesa para 4","curso":"Recepcionista de hotel"}},
+"08": {"f":"A","mus":"ligera-navidad","capa":{"pre":"8 de diciembre","lineas":["Inmaculada Concepción"],"tam":64,"sub":"Festivo nacional · ¡Feliz día!","wa":false,"y":1250}},
+"09": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["El primer SMS de la historia","decía <em>«Merry Christmas»</em>"],"tam":52,"sub":"3 de diciembre de 1992","curso":"Formación de informática"}},
+"10": {"f":"A","mus":"suave-dias-mundiales","capa":{"pre":"10 de diciembre · Derechos Humanos","lineas":["La Declaración Universal","es el documento <em>más traducido</em>","del mundo"],"tam":54,"sub":"Aprobada en París en 1948","wa":false,"y":1130}},
+"11": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["El muérdago y el acebo pueden","<em>intoxicar</em> a perros y gatos"],"tam":50,"sub":"La flor de Pascua, mucho menos","curso":"Curso de Auxiliar de Veterinaria"}},
+"12": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Las facturas se guardan","al menos <em>4 años</em>"],"tam":58,"sub":"Por Hacienda · 6 años según el Código de Comercio","curso":"Formación de administración"}},
+"13": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Con la edad se siente","<em>menos sed</em>"],"tam":60,"sub":"Ofrece agua a tus mayores aunque no la pidan","curso":"Atención sociosanitaria · SSCS0108"}},
+"14": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["La <em>gobernanta</em> dirige","el departamento de pisos"],"tam":56,"sub":"Habitaciones impecables, también en Navidad","curso":"Gobernanta de hotel"}},
+"15": {"f":"A","mus":"ligera-navidad","capa":{"pre":"Atragantamiento","lineas":["5 golpes en la espalda y","5 <em>compresiones</em> abdominales"],"tam":52,"sub":"Si tose, anímale a seguir tosiendo","curso":"Formación en emergencias sanitarias"}},
+"16": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Bajar <em>1 °C</em> la calefacción","ahorra en torno a un 7 %"],"tam":56,"sub":"Fuente: IDAE","curso":"Técnico de climatización"}},
+"17": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Ahogarse es <em>silencioso</em> y puede","pasar en menos de un minuto"],"tam":48,"sub":"Por eso el socorrista no aparta la vista","curso":"Socorrista"}},
+"19": {"f":"A","mus":"ligera-navidad","capa":{"pre":"Ojo en Navidad","lineas":["¿Un SMS para pagar un envío?","<em>Desconfía</em> y no abras el enlace"],"tam":50,"sub":"Los fraudes de paquetería aumentan estas fechas","curso":"Formación de informática"}},
+"20": {"f":"A","mus":"ligera-navidad","capa":{"pre":"20 de diciembre","lineas":["Día Internacional de la","Solidaridad Humana"],"tam":58,"sub":"Un gesto pequeño también cuenta","wa":false,"y":1220}},
+"21": {"f":"A","mus":"ligera-navidad","capa":{"pre":"21 de diciembre","lineas":["Hoy es el día","<em>más corto</em> del año"],"tam":62,"sub":"Solsticio de invierno: desde mañana, más luz","wa":false,"y":1220}},
+"22": {"f":"C","mus":"ligera-navidad","capas":[
+  {"pre":"22 de diciembre","lineas":["Lotería de Navidad"],"tam":72,"wa":false,"y":1250},
+  {"lineas":["El Gordo:","<em>400.000 €</em> al décimo"],"tam":64,"wa":false,"y":1230},
+  {"lineas":["Y si no toca…","tu mejor premio: <em>formarte</em>."],"tam":58,"y":1200,"y_wa":1430}]},
+"23": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Tensión óptima:","por debajo de <em>120/80</em>"],"tam":60,"sub":"Mídela en reposo y sentado","curso":"Curso de Auxiliar de Enfermería"}},
+"24": {"f":"C","mus":"navidad-emotiva","capas":[
+  {"lineas":["Feliz <em>Nochebuena</em>"],"tam":76,"wa":false,"y":1280},
+  {"lineas":["Que esta noche","estés con los tuyos."],"tam":62,"wa":false,"y":1240},
+  {"lineas":["Gracias por","este año juntos."],"tam":66,"wa":false,"y":1240}]},
+"25": {"f":"C","mus":"navidad-emotiva","capas":[
+  {"lineas":["Feliz <em>Navidad</em>"],"tam":80,"wa":false,"y":1280},
+  {"lineas":["Paz, salud","y mucho cariño."],"tam":66,"wa":false,"y":1240},
+  {"lineas":["Feliz Navidad de parte","de todo el equipo."],"tam":58,"wa":false,"y":1240}]},
+"26": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["El monóxido de carbono","<em>no huele</em> ni se ve"],"tam":56,"sub":"Ventila y revisa braseros y estufas","curso":"Formación en emergencias sanitarias"}},
+"27": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Una bomba de calor da","<em>3-4 kWh</em> de calor"],"tam":58,"sub":"por cada kWh de electricidad que gasta","curso":"Técnico de aire acondicionado"}},
+"28": {"f":"A","mus":"ligera-navidad","capa":{"pre":"28 de diciembre · Santos Inocentes","lineas":["Hoy no te creas nada…","salvo esto: <em>puedes formarte</em>"],"tam":52}},
+"29": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["Tu perro oye sonidos","de hasta <em>45.000 Hz</em>"],"tam":58,"sub":"Por eso los petardos le asustan tanto","curso":"Curso de Auxiliar de Veterinaria"}},
+"30": {"f":"A","mus":"ligera-navidad","capa":{"pre":"¿Sabías que…?","lineas":["12 uvas,","<em>una por campanada</em>"],"tam":62,"sub":"Costumbre popular desde principios del siglo XX","wa":false,"y":1220}},
+"31": {"f":"C","mus":"nochevieja","capas":[
+  {"pre":"31 de diciembre","lineas":["Adiós, <em>2026</em>"],"tam":76,"wa":false,"y":1260},
+  {"lineas":["Que 2027 sea el año","en que <em>te formes</em>."],"tam":58,"wa":false,"y":1230},
+  {"lineas":["¡Feliz <em>Año Nuevo</em>!"],"tam":68,"y":1250,"y_wa":1420}]}
+}
