@@ -1,0 +1,10 @@
+{
+  "nota": "«Con tu formación, llévate un smartwatch de regalo» (audio del jefe 24-nov: sin nombrar campaña ni más detalles). Sin IA. Aprobado por el usuario el 24-nov.",
+  "archivos": ["post-smartwatch-regalo.jpg", "historia-smartwatch-regalo.jpg"],
+  "metricool": [
+    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram POST, facebook POST, linkedin, tiktok (foto)", "hora": "2026-11-24T09:00:00 Europe/Madrid", "id": "439916819", "uuid": "-4774053847523573604"},
+    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram POST, linkedin", "hora": "2026-11-24T09:00:00 Europe/Madrid", "id": "439916841", "uuid": "-3756894970166947994"},
+    {"marca": "alaconformacion", "brandId": 5914974, "red": "instagram STORY, facebook STORY", "hora": "2026-11-24T09:02:00 Europe/Madrid", "id": "439916866", "uuid": "6475546032243494269"},
+    {"marca": "novantisformacion", "brandId": 7052187, "red": "instagram STORY", "hora": "2026-11-24T09:02:00 Europe/Madrid", "id": "439916889", "uuid": "-4725391643043738647"}
+  ]
+}
