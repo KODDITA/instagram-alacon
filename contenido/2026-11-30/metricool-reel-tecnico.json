@@ -1,10 +1,10 @@
 {
-  "nota": "Reel «Así trabaja un técnico en emergencias sanitarias» (30,5 s, vídeo 32, planos e imagen con IA de Higgsfield, voz Isabella)",
-  "archivo": "reel-tecnico-emergencias.mp4 (subido a la release historias-2026-11, no al repo)",
-  "media": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/reel-tecnico-emergencias.mp4",
+  "nota": "Reel «Así trabaja un técnico en emergencias sanitarias» (30,5 s, vídeo 32, planos e imagen con IA de Higgsfield, voz Isabella) · v1 retirada por el usuario el 27-nov; v2 con luces de emergencia encendidas y puertas en orden (abrir → camilla → cerrar)",
+  "archivo": "reel-tecnico-emergencias-v2.mp4 (release historias-2026-11)",
+  "media": "https://github.com/KODDITA/instagram-alacon/releases/download/historias-2026-11/reel-tecnico-emergencias-v2.mp4",
   "portada_ms": 2300,
   "marcas_ia": true,
-  "metricool": [
+  "metricool_v1_retirado": [
     {
       "marca": "alaconformacion",
       "brandId": 5914974,
@@ -22,6 +22,26 @@
       "id": "444040924",
       "uuid": "-364360167855931012",
       "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-364360167855931012"
+    }
+  ],
+  "metricool": [
+    {
+      "marca": "alaconformacion",
+      "brandId": 5914974,
+      "red": "instagram REEL, facebook REEL, tiktok, youtube short EDUCATION, linkedin",
+      "hora": "2026-11-30T11:00:00 Europe/Zurich",
+      "id": "444096844",
+      "uuid": "8373428459662298750",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=5914974&openWithPostUuid=8373428459662298750"
+    },
+    {
+      "marca": "novantisformacion",
+      "brandId": 7052187,
+      "red": "instagram REEL, linkedin",
+      "hora": "2026-11-30T11:00:00 Europe/Zurich",
+      "id": "444096871",
+      "uuid": "-5144206292680555917",
+      "planner": "https://app.metricool.com/planner/calendar?blogId=7052187&openWithPostUuid=-5144206292680555917"
     }
   ]
 }
